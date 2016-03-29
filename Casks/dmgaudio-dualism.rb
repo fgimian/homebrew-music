@@ -1,6 +1,6 @@
 cask 'dmgaudio-dualism' do
-  version '1.04'
-  sha256 'f05a1997ddbe8ccef40dac11f92feb41ffa73ab94bd6d38dd875be9a8a035a9c'
+  version '1.03'
+  sha256 '978b634516385ba94f82cdecd786b6e05e4e12da2f9b75d4b80fc21471d06e8a'
 
   url "http://www.dmgaudio.com/dl/Dualism_v#{version}/DualismMac_v#{version}.zip"
   name 'DMG Audio Dualism'

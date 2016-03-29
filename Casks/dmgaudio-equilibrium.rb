@@ -1,6 +1,6 @@
 cask 'dmgaudio-equilibrium' do
-  version '1.53'
-  sha256 'af776ba91f2ce155a4e3087847a14e874c0fc4e66605314012f2224e93b8cbd2'
+  version '1.51'
+  sha256 '5df4cec959399554e40e7897f731f49b081c233a78a9e1ae1f0c2c91ea46ae04'
 
   url "http://www.dmgaudio.com/dl/EQuilibrium_v#{version}/EQuilibriumMac_v#{version}.zip"
   name 'DMG Audio EQuilibrium'
