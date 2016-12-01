@@ -1,18 +1,30 @@
-cask 'dmgaudio-dualism' do
-  version '1.03'
-  sha256 '978b634516385ba94f82cdecd786b6e05e4e12da2f9b75d4b80fc21471d06e8a'
+require 'open-uri'
 
-  url "http://www.dmgaudio.com/dl/Dualism_v#{version}/DualismMac_v#{version}.zip"
-  name 'DMG Audio Dualism'
-  homepage 'http://dmgaudio.com/products_dualism.php'
-  license :commercial
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
+
+cask 'dmgaudio-dualism' do
+  version '1.06'
+  sha256 '0e5e25c26ffb80264b75af01413d7bad45575ce316361fd5e23f717973e37b56'
+
+  url URI::encode(
+    'file://' + File.join(
+      base_dir,
+      'Plug-ins (Effect)',
+      'DMGAudio',
+      "DMGAudio Dualism v#{version}",
+      "DualismMac_v#{version}.zip"
+    )
+  )
+  name 'DMGAudio Dualism'
+  homepage 'https://dmgaudio.com/products_dualism.php'
 
   pkg "DualismMac_v#{version}.pkg"
 
   uninstall pkgutil: 'com.dmgaudio.pkg.Dualism*'
 
   zap delete: [
-                '~/Library/Preferences/com.dmgaudio.Dualism.plist',
                 '~/Library/Application Support/DMGAudio/Dualism',
+                '~/Library/Preferences/com.dmgaudio.Dualism.plist',
+                '/Library/Application Support/DMGAudio/Dualism'
               ]
 end
