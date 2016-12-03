@@ -23,5 +23,6 @@ cask 'focusrite-red-plugin-suite' do
   uninstall pkgutil: 'com.Focusrite.*.pkg.Red2Red3Plug-*'
 
   zap delete: [
+                '~/Music/Focusrite/Activation/Red2Red3Plugin.txt'
               ]
 end
