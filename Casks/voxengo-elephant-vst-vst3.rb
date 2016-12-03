@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
 
 cask 'voxengo-elephant-vst-vst3' do
-  version '4.4'
-  sha256 'a1ad5bade01e46bebe13da8868e7096aab742b4f7020464fcf6957be871ac6e1'
+  version '4.5'
+  sha256 'c9763bdbd0594ee270dd2b8aa8e179d7092b3414a490724e93d72491dbfe84a2'
 
   url URI::encode(
     'file://' + File.join(

@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
 
 cask 'cableguys-volumeshaper' do
-  version '4.2.2'
-  sha256 '95b001ab736ac06c197cb4fd14bd12f091a6cb5433e7dda593d4e8fdf36d17eb'
+  version '4.2.3'
+  sha256 'aa1f391882f8ae0abe6af999286ee766fe0a457df5e23cb582f3c81d1ad8ba8d'
 
   url URI::encode(
     'file://' + File.join(
