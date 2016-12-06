@@ -4,7 +4,7 @@ base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
 
 cask 'celemony-melodyne-editor' do
   version '2.1.2'
-  sha256 'c9b187fe53ada62be49fbeb2ef0819b263709efc152f330f0ae5de1e9c338443'
+  sha256 'd2a4d6fecd323378d71fa20e1e203298e8f92e96e41c96cc44cc16ab84b0a276'
 
   url URI::encode(
     'file://' + File.join(
