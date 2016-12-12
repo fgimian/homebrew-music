@@ -25,8 +25,10 @@ cask 'u-he-zebra' do
   zap delete: [
                 '~/Library/Application Support/u-he/Zebra2',
                 '~/Library/Application Support/u-he/Zebralette',
-                '~/Library/Application Support/u-he/com.u-he.Zebra2.*',
-                '/Library/Application Support/u-he/com.u-he.Zebra2.*',
+                '~/Library/Application Support/u-he/com.u-he.Zebra2.Preferences.txt',
+                '~/Library/Application Support/u-he/com.u-he.Zebra2.midiassign.txt',
+                '~/Library/Application Support/u-he/com.u-he.Zebra2.plist',
+                '/Library/Application Support/u-he/com.u-he.Zebra2.publicparams.txt',
                 '/Library/Application Support/u-he/Zebra2',
                 '/Library/Application Support/u-he/Zebralette',
                 '/Library/Application Support/u-he/Zebrify',

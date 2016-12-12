@@ -23,7 +23,9 @@ cask 'u-he-satin' do
   uninstall pkgutil: 'com.u-he.Satin.*'
 
   zap delete: [
-                '~/Library/Application Support/u-he/com.u-he.Satin.*',
+                '~/Library/Application Support/u-he/com.u-he.Satin.Preferences.txt',
+                '~/Library/Application Support/u-he/com.u-he.Satin.midiassign.txt',
+                '~/Library/Application Support/u-he/com.u-he.Satin.plist',
                 '/Library/Application Support/u-he/Satin'
               ]
 end

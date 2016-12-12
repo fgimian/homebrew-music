@@ -23,7 +23,9 @@ cask 'u-he-mfm2' do
   uninstall pkgutil: 'com.u-he.MFM2.*'
 
   zap delete: [
-                '~/Library/Application Support/u-he/com.u-he.MFM2.*',
+                '~/Library/Application Support/u-he/com.u-he.MFM2.Preferences.txt',
+                '~/Library/Application Support/u-he/com.u-he.MFM2.midiassign.txt',
+                '~/Library/Application Support/u-he/com.u-he.MFM2.plist',
                 '/Library/Application Support/u-he/MFM2'
               ]
 end

@@ -24,7 +24,9 @@ cask 'u-he-hive' do
 
   zap delete: [
                 '~/Library/Application Support/u-he/Hive',
-                '~/Library/Application Support/u-he/com.u-he.Hive.*',
+                '~/Library/Application Support/u-he/com.u-he.Hive.Preferences.txt',
+                '~/Library/Application Support/u-he/com.u-he.Hive.midiassign.txt',
+                '~/Library/Application Support/u-he/com.u-he.Hive.plist',
                 '/Library/Application Support/u-he/Hive'
               ]
 end

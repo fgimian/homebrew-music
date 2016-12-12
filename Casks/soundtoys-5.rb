@@ -23,6 +23,8 @@ cask 'soundtoys-5' do
   uninstall pkgutil: 'com.soundtoys.com.soundtoys.Soundtoys5.*'
 
   zap delete: [
-                '~/Library/Preferences/com.soundtoys.*'
+                '~/Library/Preferences/com.soundtoys.metrics.plist',
+                '~/Library/Preferences/com.soundtoys.notifications.plist',
+                '~/Library/Preferences/com.soundtoys.plist'
               ]
 end
