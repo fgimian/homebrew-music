@@ -18,5 +18,7 @@ cask 'steinberg-retrologue' do
   name 'Steinberg Retrologue'
   homepage 'https://www.steinberg.net/en/products/vst/retrologue'
 
+  depends_on cask: 'steinberg-cubase-pro'
+
   pkg 'Retrologue.pkg'
 end

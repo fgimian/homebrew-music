@@ -4,7 +4,7 @@ base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
 
 cask 'steinberg-padshop-update' do
   version '1.1'
-  sha256 'bc2eb87e4e2b2ee9c214d7601a23155185af689fbab8ac2e308f54be2b41cbc5'
+  sha256 '56e89d4cc2ae1932bde71614d844564a2f1061d767801365cd1cdbcee1c7a34d'
 
   url URI::encode(
     'file://' + File.join(
@@ -17,6 +17,8 @@ cask 'steinberg-padshop-update' do
   )
   name 'Steinberg Padshop (Update)'
   homepage 'https://www.steinberg.net/en/products/vst/padshop/padshop.html'
+
+  depends_on cask: 'steinberg-padshop'
 
   pkg 'VSTi_AU_Patcher.pkg'
 end

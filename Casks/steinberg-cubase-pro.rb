@@ -3,7 +3,7 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
 
 cask 'steinberg-cubase-pro' do
-  version '9.0'
+  version '9.0.0'
   sha256 'a4bd3e636cf6dfa105dfbdbcda9c67775398b7ec482b2ae309ddbef0f48ffadf'
 
   url URI::encode(

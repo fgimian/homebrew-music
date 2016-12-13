@@ -35,7 +35,7 @@ cask 'sonalksis-studio-one-bundle' do
     end
   end
 
-  uninstall pkgutil: 'com.sonalksis.pkg.PluginManagerOffline.*'
+  uninstall pkgutil: 'com.sonalksis.pkg.PluginManagerOffline.*',
             delete:  [
                        '/Library/Audio/Plug-Ins/VST/Sonalksis CQ1 Mono.vst',
                        '/Library/Audio/Plug-Ins/VST/Sonalksis CQ1 Stereo.vst',
