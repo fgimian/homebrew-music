@@ -6,14 +6,7 @@ cask 'celemony-melodyne-editor' do
   version '2.1.2'
   sha256 'd2a4d6fecd323378d71fa20e1e203298e8f92e96e41c96cc44cc16ab84b0a276'
 
-  url URI::encode(
-    'file://' + File.join(
-      base_dir,
-      'DAWs & Drivers',
-      "Celemony Melodyne Editor v#{version}",
-      "Melodyne singletrack.#{version}.fgimian.dmg"
-    )
-  )
+  url URI::encode("file://#{base_dir}/Melodyne singletrack.#{version}.fgimian.dmg")
   name 'Celemony Melodyne Editor'
   homepage 'http://www.celemony.com/en/melodyne'
 

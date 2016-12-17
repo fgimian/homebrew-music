@@ -6,15 +6,7 @@ cask 'cableguys-volumeshaper' do
   version '4.2.3'
   sha256 'aa1f391882f8ae0abe6af999286ee766fe0a457df5e23cb582f3c81d1ad8ba8d'
 
-  url URI::encode(
-    'file://' + File.join(
-      base_dir,
-      'Plug-ins (Effect)',
-      'Cableguys',
-      "Cableguys VolumeShaper v#{version}",
-      'Cableguys-VolumeShaper4.zip'
-    )
-  )
+  url URI::encode("file://#{base_dir}/Cableguys-VolumeShaper4.zip")
   name 'Cableguys VolumeShaper'
   homepage 'http://www.cableguys.com/filter-shaper.html'
 

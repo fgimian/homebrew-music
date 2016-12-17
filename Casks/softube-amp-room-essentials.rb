@@ -6,15 +6,7 @@ cask 'softube-amp-room-essentials' do
   version '2.3.90'
   sha256 'fc046b39fdb148a524d24714ede067d823b8b28ec9462f380ebbfae57a1d75e0'
 
-  url URI::encode(
-    'file://' + File.join(
-      base_dir,
-      'Plug-ins (Effect)',
-      'Softube',
-      "Softube Amp Room Essentials v#{version}",
-      "Amp_Room_Essentials-2.3.90-20161021-20617-1x5biwx.zip"
-    )
-  )
+  url URI::encode("file://#{base_dir}/Amp_Room_Essentials-2.3.90-20161021-20617-1x5biwx.zip")
   name 'Softube Amp Room Essentials'
   homepage 'https://www.softube.com/index.php?id=arb'
 

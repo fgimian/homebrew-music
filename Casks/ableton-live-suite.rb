@@ -1,19 +1,8 @@
-require 'open-uri'
-
-base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
-
-cask 'ableton-live-9-suite' do
-  version '9.7'
+cask 'ableton-live-suite' do
+  version '9.7.1'
   sha256 '35fa16a2c703d458fc005413e81e7fccd3ebf18eff5bffea91eb9165db42c400'
 
-  url URI::encode(
-    'file://' + File.join(
-      base_dir,
-      'DAWs & Drivers',
-      "Ableton Live 9 Suite v#{version}",
-      "ableton_live_suite_#{version}_64.dmg"
-    )
-  )
+  url "http://cdn2-downloads.ableton.com/channels/#{version}/ableton_live_suite_#{version}_64.dmg"
   name 'Ableton Live 9 Suite'
   homepage 'https://www.ableton.com/'
 

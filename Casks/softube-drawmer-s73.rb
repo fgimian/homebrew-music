@@ -6,15 +6,7 @@ cask 'softube-drawmer-s73' do
   version '2.3.90'
   sha256 '5f17353bd8a315bbd043594702a0ff9bdb2060c40976ecb9188610196ec09b6a'
 
-  url URI::encode(
-    'file://' + File.join(
-      base_dir,
-      'Plug-ins (Effect)',
-      'Softube',
-      "Softube Drawmer S73 v#{version}",
-      "Drawmer_S73-2.3.90-20161021-20617-mevjot.zip"
-    )
-  )
+  url URI::encode("file://#{base_dir}/Drawmer_S73-2.3.90-20161021-20617-mevjot.zip")
   name 'Softube Drawmer S73'
   homepage 'https://www.softube.com/index.php?id=drawmers73'
 
