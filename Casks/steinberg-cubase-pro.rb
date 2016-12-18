@@ -6,7 +6,7 @@ cask 'steinberg-cubase-pro' do
   version '9.0.0'
   sha256 'a4bd3e636cf6dfa105dfbdbcda9c67775398b7ec482b2ae309ddbef0f48ffadf'
 
-  url URI::encode("file://#{base_dir}/Cubase_9_Installer_mac.dmg")
+  url URI::encode("file://#{base_dir}/Steinberg/Cubase_9_Installer_mac.dmg")
   name 'Steinberg Cubase Pro'
   homepage 'https://www.steinberg.net/en/products/cubase'
 

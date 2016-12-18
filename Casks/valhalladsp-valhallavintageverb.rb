@@ -6,7 +6,7 @@ cask 'valhalladsp-valhallavintageverb' do
   version '1.5.0'
   sha256 '649f536cd8d53051e71c4ed7f1ab385635712449e522845c646161aa235490d7'
 
-  url URI::encode("file://#{base_dir}/ValhallaVintageVerbOSX_#{version.gsub('.', '_')}dot3.zip")
+  url URI::encode("file://#{base_dir}/ValhallaDSP/ValhallaVintageVerbOSX_#{version.gsub('.', '_')}dot3.zip")
   name 'ValhallaDSP ValhallaVintageVerb'
   homepage 'http://valhalladsp.com/shop/plugins/valhalla-vintage-verb/'
 

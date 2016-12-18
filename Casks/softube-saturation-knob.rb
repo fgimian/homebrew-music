@@ -6,7 +6,7 @@ cask 'softube-saturation-knob' do
   version '2.3.90'
   sha256 '11b0947004764cc8c3b719282486620d34cc2b01dc882435cfd09c809f7162fc'
 
-  url URI::encode("file://#{base_dir}/Saturation_Knob-2.3.90-20161021-20617-1fpmmee.zip")
+  url URI::encode("file://#{base_dir}/Softube/Saturation_Knob-2.3.90-20161021-20617-1fpmmee.zip")
   name 'Softube Saturation Knob'
   homepage 'https://www.softube.com/index.php?id=satknob'
 

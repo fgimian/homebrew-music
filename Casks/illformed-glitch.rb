@@ -6,7 +6,7 @@ cask 'illformed-glitch' do
   version '2.1.0'
   sha256 '1481d7eac57093ff6dc2acbd7b43ce7d895168836d5aa94bd28001f5f35d25ab'
 
-  url URI::encode("file://#{base_dir}/Glitch_#{version.gsub('.', '_')}_Mac_Registered.zip")
+  url URI::encode("file://#{base_dir}/Illformed/Glitch_#{version.gsub('.', '_')}_Mac_Registered.zip")
   name 'Illformed Glitch'
   homepage 'https://illformed.com/glitch/'
 

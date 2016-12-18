@@ -6,7 +6,7 @@ cask 'studio-devil-amp-modeler-pro' do
   version '1.5'
   sha256 '35c0924209c7f1d1c29b8709395a665246d21a01fc772aa57a8678dd239957d0'
 
-  url URI::encode("file://#{base_dir}/studiodevil_amp_v#{version.gsub('.', '_')}.dmg")
+  url URI::encode("file://#{base_dir}/Studio Devil/studiodevil_amp_v#{version.gsub('.', '_')}.dmg")
   name 'Studio Devil Amp Modeler Pro'
   homepage 'http://www.studiodevil.com/products/amp_modeler_pro/'
 
