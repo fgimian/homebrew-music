@@ -13,6 +13,6 @@ cask 'dmgaudio-equality' do
   zap delete: [
                 '~/Library/Application Support/DMGAudio/EQuality',
                 '~/Library/Preferences/com.dmgaudio.EQuality.plist',
-                '/Library/Application Support/DMGAudio/EQuality'
+                '/Library/Application Support/DMGAudio/EQuality',
               ]
 end

@@ -10,6 +10,6 @@ cask 'voxengo-span-au-aax' do
   artifact 'ProTools AAX/SPAN.aaxplugin', target: '/Library/Application Support/Avid/Audio/Plug-Ins/SPAN.aaxplugin'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/SPAN'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/SPAN',
               ]
 end

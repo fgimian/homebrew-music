@@ -12,6 +12,6 @@ cask 'cytomic-the-drop' do
 
   zap delete: [
                 '~/Library/Application Support/Cytomic/The Drop',
-                '~/Library/Caches/The Drop'
+                '~/Library/Caches/The Drop',
               ]
 end

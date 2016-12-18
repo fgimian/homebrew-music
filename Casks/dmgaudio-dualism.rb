@@ -13,6 +13,6 @@ cask 'dmgaudio-dualism' do
   zap delete: [
                 '~/Library/Application Support/DMGAudio/Dualism',
                 '~/Library/Preferences/com.dmgaudio.Dualism.plist',
-                '/Library/Application Support/DMGAudio/Dualism'
+                '/Library/Application Support/DMGAudio/Dualism',
               ]
 end

@@ -10,6 +10,6 @@ cask 'voxengo-glisseq-au-aax' do
   artifact 'ProTools AAX/GlissEQ.aaxplugin', target: '/Library/Application Support/Avid/Audio/Plug-Ins/GlissEQ.aaxplugin'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/GlissEQ'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/GlissEQ',
               ]
 end

@@ -13,6 +13,6 @@ cask 'dmgaudio-equick' do
   zap delete: [
                 '~/Library/Application Support/DMGAudio/EQuick',
                 '~/Library/Preferences/com.dmgaudio.EQuick.plist',
-                '/Library/Application Support/DMGAudio/EQuick'
+                '/Library/Application Support/DMGAudio/EQuick',
               ]
 end

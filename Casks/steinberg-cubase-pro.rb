@@ -1,12 +1,13 @@
 require 'open-uri'
 
-base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'steinberg-cubase-pro' do
   version '9.0.0'
   sha256 'a4bd3e636cf6dfa105dfbdbcda9c67775398b7ec482b2ae309ddbef0f48ffadf'
 
-  url URI::encode("file://#{base_dir}/Steinberg/Cubase_9_Installer_mac.dmg")
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/Steinberg/Cubase_9_Installer_mac.dmg")
   name 'Steinberg Cubase Pro'
   homepage 'https://www.steinberg.net/en/products/cubase'
 
@@ -47,7 +48,7 @@ cask 'steinberg-cubase-pro' do
                        'com.steinberg.RockPopToolboxPatternBanks',
                        'com.steinberg.UploadManager',
                        'com.steinberg.vst3vsttransitextension',
-                       'com.steinberg.vsttransitcore'
+                       'com.steinberg.vsttransitcore',
                      ]
 
   zap delete: [

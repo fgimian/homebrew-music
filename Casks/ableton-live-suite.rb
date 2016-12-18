@@ -15,6 +15,6 @@ cask 'ableton-live-suite' do
                 '~/Library/Caches/com.ableton.live',
                 '~/Library/Cookies/com.ableton.live.binarycookies',
                 "~/Library/Preferences/Ableton/Live #{version}",
-                '~/Library/Preferences/com.ableton.live.plist'
+                '~/Library/Preferences/com.ableton.live.plist',
               ]
 end

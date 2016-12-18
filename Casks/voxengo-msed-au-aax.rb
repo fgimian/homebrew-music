@@ -10,6 +10,6 @@ cask 'voxengo-msed-au-aax' do
   artifact 'ProTools AAX/MSED.aaxplugin', target: '/Library/Application Support/Avid/Audio/Plug-Ins/MSED.aaxplugin'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/MSED'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/MSED',
               ]
 end

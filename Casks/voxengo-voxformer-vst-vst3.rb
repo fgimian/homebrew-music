@@ -10,6 +10,6 @@ cask 'voxengo-voxformer-vst-vst3' do
   artifact 'Voxformer.vst3', target: '/Library/Audio/Plug-Ins/VST3/Voxformer.vst3'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Voxformer'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Voxformer',
               ]
 end

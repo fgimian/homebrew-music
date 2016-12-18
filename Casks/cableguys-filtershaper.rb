@@ -1,12 +1,13 @@
 require 'open-uri'
 
-base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR',  '')
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'cableguys-filtershaper' do
   version '3.3.2'
   sha256 '87cc96a62e048f68cdbac1d9b96655e8412b2f866ae1a8bd7565cf59dbd75695'
 
-  url URI::encode("file://#{base_dir}/Cableguys/Cableguys-FilterShaper3.zip")
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/Cableguys/Cableguys-FilterShaper3.zip")
   name 'Cableguys FilterShaper'
   homepage 'http://www.cableguys.com/filter-shaper.html'
 
@@ -16,6 +17,6 @@ cask 'cableguys-filtershaper' do
 
   zap delete: [
                 '~/Library/Cableguys/FilterShaper',
-                '~/Library/Preferences/de.cableguys.filtershaper3.plist'
+                '~/Library/Preferences/de.cableguys.filtershaper3.plist',
               ]
 end

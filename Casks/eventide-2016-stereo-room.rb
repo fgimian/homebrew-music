@@ -1,8 +1,8 @@
 cask 'eventide-2016-stereo-room' do
-  version '2.2.3'
-  sha256 '9d3773766484f723cd5557d453a34c5441e3f03d3a3ee6fdfe376e9d59e1525b'
+  version '2.2.4'
+  sha256 '55fb5ec534f2c934a5870379846d7d23bc86f89b558133953c840dc7cf018881'
 
-  url "https://www.eventideaudio.com/downloader/1165"
+  url 'https://www.eventideaudio.com/downloader/1165'
   name 'Eventide 2016 Stereo Room'
   homepage 'https://www.eventideaudio.com/products/plugins/reverb/2016-stereo-room'
 
@@ -11,6 +11,6 @@ cask 'eventide-2016-stereo-room' do
             sudo:   true
 
   zap delete: [
-                '~/Library/Saved Application State/com.eventide.2016StereoRoom.savedState'
+                '~/Library/Saved Application State/com.eventide.2016StereoRoom.savedState',
               ]
 end

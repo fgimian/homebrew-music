@@ -11,6 +11,6 @@ cask 'relab-lx480-complete' do
   uninstall pkgutil: 'com.relab.pkg.LX480Complete.*'
 
   zap delete: [
-                '/Library/Application Support/Relab Development/LX480 Complete'
+                '/Library/Application Support/Relab Development/LX480 Complete',
               ]
 end

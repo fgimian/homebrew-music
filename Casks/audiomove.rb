@@ -10,6 +10,6 @@ cask 'audiomove' do
 
   zap delete: [
                 '~/.audiomove_settings',
-                '~/Library/Saved Application State/com.yourcompany.AudioMove.savedState'
+                '~/Library/Saved Application State/com.yourcompany.AudioMove.savedState',
               ]
 end

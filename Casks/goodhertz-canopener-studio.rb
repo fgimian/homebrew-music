@@ -11,6 +11,6 @@ cask 'goodhertz-canopener-studio' do
   uninstall pkgutil: 'com.goodhertz.pkg.ghz2-CanOpenerStudio-CS2X-*'
 
   zap delete: [
-                '~/Music/.GDHZ'
+                '~/Music/.GDHZ',
               ]
 end

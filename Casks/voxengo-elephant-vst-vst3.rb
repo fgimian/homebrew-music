@@ -10,6 +10,6 @@ cask 'voxengo-elephant-vst-vst3' do
   artifact 'Elephant.vst3', target: '/Library/Audio/Plug-Ins/VST3/Elephant.vst3'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Elephant'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Elephant',
               ]
 end

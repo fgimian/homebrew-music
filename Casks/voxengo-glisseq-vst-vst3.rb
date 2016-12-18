@@ -10,6 +10,6 @@ cask 'voxengo-glisseq-vst-vst3' do
   artifact 'GlissEQ.vst3', target: '/Library/Audio/Plug-Ins/VST3/GlissEQ.vst3'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/GlissEQ'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/GlissEQ',
               ]
 end

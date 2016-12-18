@@ -12,6 +12,6 @@ cask 'cytomic-the-glue' do
 
   zap delete: [
                 '~/Library/Application Support/Cytomic/The Glue',
-                '~/Library/Caches/The Glue'
+                '~/Library/Caches/The Glue',
               ]
 end

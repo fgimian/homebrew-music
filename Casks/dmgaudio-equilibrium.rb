@@ -13,6 +13,6 @@ cask 'dmgaudio-equilibrium' do
   zap delete: [
                 '~/Library/Application Support/DMGAudio/EQuilibrium',
                 '~/Library/Preferences/com.dmgaudio.EQuilibrium.plist',
-                '/Library/Application Support/DMGAudio/EQuilibrium'
+                '/Library/Application Support/DMGAudio/EQuilibrium',
               ]
 end

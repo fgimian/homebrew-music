@@ -3,6 +3,7 @@ cask 'u-he-satin' do
   version '1.3.0'
   sha256 'a5f7e2ebce149cde891b3a39dea316726190517ca01034bcdc938bb2c5016415'
 
+  # uhedownloads-heckmannaudiogmb.netdna-ssl.com was verified as official when first introduced to the cask
   url "https://uhedownloads-heckmannaudiogmb.netdna-ssl.com/Releases/Satin_#{version.gsub('.', '')}_4596_Mac.zip"
   name 'u-he Satin'
   homepage 'https://www.u-he.com/cms/satin'
@@ -15,6 +16,6 @@ cask 'u-he-satin' do
                 '~/Library/Application Support/u-he/com.u-he.Satin.Preferences.txt',
                 '~/Library/Application Support/u-he/com.u-he.Satin.midiassign.txt',
                 '~/Library/Application Support/u-he/com.u-he.Satin.plist',
-                '/Library/Application Support/u-he/Satin'
+                '/Library/Application Support/u-he/Satin',
               ]
 end

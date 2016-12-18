@@ -10,6 +10,6 @@ cask 'voxengo-voxformer-au-aax' do
   artifact 'ProTools AAX/Voxformer.aaxplugin', target: '/Library/Application Support/Avid/Audio/Plug-Ins/Voxformer.aaxplugin'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Voxformer'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Voxformer',
               ]
 end

@@ -2,6 +2,7 @@ cask 'focusrite-red-plugin-suite' do
   version '1.10'
   sha256 '689c57b36d47d41c929cf2aa6bd1e4f0826160f76b85200b49c399a7b4e9ba3c'
 
+  # d3se566zfvnmhf.cloudfront.net was verified as official when first introduced to the cask
   url "https://d3se566zfvnmhf.cloudfront.net/sites/default/files/focusrite/downloads/21217/red-2-red-3-plug-in-suite-#{version}.dmg"
   name 'Focusrite Red Plugin Suite'
   homepage 'https://us.focusrite.com/plug-ins/red-plug-in-suite'
@@ -11,6 +12,6 @@ cask 'focusrite-red-plugin-suite' do
   uninstall pkgutil: 'com.Focusrite.*.pkg.Red2Red3Plug-*'
 
   zap delete: [
-                '~/Music/Focusrite/Activation/Red2Red3Plugin.txt'
+                '~/Music/Focusrite/Activation/Red2Red3Plugin.txt',
               ]
 end

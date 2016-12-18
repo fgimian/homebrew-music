@@ -13,6 +13,6 @@ cask 'dmgaudio-pitchfunk' do
   zap delete: [
                 '~/Library/Application Support/DMGAudio/PitchFunk',
                 '~/Library/Preferences/com.dmgaudio.PitchFunk.plist',
-                '/Library/Application Support/DMGAudio/PitchFunk'
+                '/Library/Application Support/DMGAudio/PitchFunk',
               ]
 end

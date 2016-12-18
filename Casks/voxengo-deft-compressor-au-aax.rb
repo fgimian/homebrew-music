@@ -10,6 +10,6 @@ cask 'voxengo-deft-compressor-au-aax' do
   artifact 'ProTools AAX/Deft Compressor.aaxplugin', target: '/Library/Application Support/Avid/Audio/Plug-Ins/Deft Compressor.aaxplugin'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Deft Compressor'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Deft Compressor',
               ]
 end

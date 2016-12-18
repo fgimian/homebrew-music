@@ -10,6 +10,6 @@ cask 'voxengo-span-vst-vst3' do
   artifact 'SPAN.vst3', target: '/Library/Audio/Plug-Ins/VST3/SPAN.vst3'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/SPAN'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/SPAN',
               ]
 end

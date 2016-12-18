@@ -10,6 +10,6 @@ cask 'voxengo-msed-vst-vst3' do
   artifact 'MSED.vst3', target: '/Library/Audio/Plug-Ins/VST3/MSED.vst3'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/MSED'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/MSED',
               ]
 end

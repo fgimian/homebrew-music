@@ -1,6 +1,5 @@
 cask 'steinberg-padshop-update' do
-  # TODO: double check this version please
-  version '1.1.48'
+  version '1.1.40'
   sha256 '56e89d4cc2ae1932bde71614d844564a2f1061d767801365cd1cdbcee1c7a34d'
 
   url 'http://download.steinberg.net/downloads_software/vsti_au_patcher/vsti_au_patcher_mac.dmg'

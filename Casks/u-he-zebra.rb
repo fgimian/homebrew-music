@@ -2,6 +2,7 @@ cask 'u-he-zebra' do
   version '2.7.2'
   sha256 '85c5fbf99b902e3787233d2d651d7e57ea5a9647df8206d68889666310b2ad62'
 
+  # uhedownloads-heckmannaudiogmb.netdna-ssl.com was verified as official when first introduced to the cask
   url "https://uhedownloads-heckmannaudiogmb.netdna-ssl.com/Releases/Zebra2_#{version.gsub('.', '_')}_Mac.zip"
   name 'u-he Zebra'
   homepage 'https://www.u-he.com/cms/zebra'
@@ -21,6 +22,6 @@ cask 'u-he-zebra' do
                 '/Library/Application Support/u-he/Zebralette',
                 '/Library/Application Support/u-he/Zebrify',
                 '/Library/Application Support/u-he/ZRev',
-                '/Library/Application Support/u-he/Themes/Unempty Dark Horse'
+                '/Library/Application Support/u-he/Themes/Unempty Dark Horse',
               ]
 end

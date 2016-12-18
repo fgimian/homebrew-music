@@ -13,6 +13,6 @@ cask 'reveal-sound-spire' do
   uninstall pkgutil: 'com.revealsound.spire.1.1.*'
 
   zap delete: [
-                '~/Library/Application Support/RevealSound'
+                '~/Library/Application Support/RevealSound',
               ]
 end

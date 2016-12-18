@@ -13,6 +13,6 @@ cask 'dmgaudio-expurgate' do
   zap delete: [
                 '~/Library/Application Support/DMGAudio/Expurgate',
                 '~/Library/Preferences/com.dmgaudio.Expurgate.plist',
-                '/Library/Application Support/DMGAudio/Expurgate'
+                '/Library/Application Support/DMGAudio/Expurgate',
               ]
 end

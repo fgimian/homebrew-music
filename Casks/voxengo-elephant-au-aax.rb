@@ -10,6 +10,6 @@ cask 'voxengo-elephant-au-aax' do
   artifact 'ProTools AAX/Elephant.aaxplugin', target: '/Library/Application Support/Avid/Audio/Plug-Ins/Elephant.aaxplugin'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Elephant'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Elephant',
               ]
 end

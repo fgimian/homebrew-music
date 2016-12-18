@@ -13,6 +13,6 @@ cask 'dmgaudio-essence' do
   zap delete: [
                 '~/Library/Application Support/DMGAudio/Essence',
                 '~/Library/Preferences/com.dmgaudio.Essence.plist',
-                '/Library/Application Support/DMGAudio/Essence'
+                '/Library/Application Support/DMGAudio/Essence',
               ]
 end

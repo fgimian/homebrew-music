@@ -10,6 +10,6 @@ cask 'voxengo-deft-compressor-vst-vst3' do
   artifact 'Deft Compressor.vst3', target: '/Library/Audio/Plug-Ins/VST3/Deft Compressor.vst3'
 
   zap delete: [
-                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Deft Compressor'
+                '~/Library/Preferences/Voxengo/Audio Plug-Ins/Deft Compressor',
               ]
 end

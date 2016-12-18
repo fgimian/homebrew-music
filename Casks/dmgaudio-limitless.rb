@@ -13,6 +13,6 @@ cask 'dmgaudio-limitless' do
   zap delete: [
                 '~/Library/Application Support/DMGAudio/Limitless',
                 '~/Library/Preferences/com.dmgaudio.Limitless.plist',
-                '/Library/Application Support/DMGAudio/Limitless'
+                '/Library/Application Support/DMGAudio/Limitless',
               ]
 end
