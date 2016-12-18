@@ -11,8 +11,26 @@ cask 'synapse-audio-dune' do
   name 'Synapse Audio DUNE'
   homepage 'http://www.synapse-audio.com/dune2.html'
 
-  pkg 'Install DUNE 2.5 (AAX).pkg'
-  pkg 'Install DUNE 2.5 (VST,AU).pkg'
+  pkg 'Install DUNE 2.5 (AAX).pkg',
+      choices: [
+                 # Disable 'Synapse Audio DUNE 2.5 (AAX) Postflight' so that
+                 # the register app isn't started after installation.
+                 {
+                   'choiceIdentifier' => 'choice10',
+                   'choiceAttribute'  => 'selected',
+                   'attributeSetting' => 0,
+                 },
+               ]
+  pkg 'Install DUNE 2.5 (VST,AU).pkg',
+      choices: [
+                 # Disable 'Synapse Audio DUNE 2.5 Postfligh' so that
+                 # the register app isn't started after installation.
+                 {
+                   'choiceIdentifier' => 'choice6',
+                   'choiceAttribute'  => 'selected',
+                   'attributeSetting' => 0,
+                 },
+               ]
 
   uninstall pkgutil: 'com.audiounit.SynapseAudio.DUNE2.*'
 
