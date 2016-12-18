@@ -1,4 +1,4 @@
-cask 'steinberg-cubase-pro-update' do
+cask 'steinberg-cubase-pro-9-update' do
   version '9.0.1'
   sha256 '2abcb96745ed3ea34efedca282a94cac816312e9d223b872789eb3a3882ec389'
 
