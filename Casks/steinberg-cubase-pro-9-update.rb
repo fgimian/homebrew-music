@@ -6,7 +6,7 @@ cask 'steinberg-cubase-pro-9-update' do
   name 'Steinberg Cubase Pro (Update)'
   homepage 'https://www.steinberg.net/en/products/cubase'
 
-  depends_on cask: 'steinberg-cubase-pro'
+  depends_on cask: 'steinberg-cubase-pro-9'
 
   pkg 'Cubase 9 Update.pkg'
 end
