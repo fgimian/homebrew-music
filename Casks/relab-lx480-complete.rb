@@ -1,12 +1,12 @@
 cask 'relab-lx480-complete' do
-  version '2.2.3'
-  sha256 '9e05b0a338c90df2c224e1aacf73ff6bd7046c41be2e5e479b6f520d850b329f'
+  version '2.2.4'
+  sha256 'd7c7f23bccaf899b8814b070b4213be8cb43c53b13faa4682927743bca066e5f'
 
   url 'http://www.relab.dk/public/products/LX480_Complete_mac.zip'
   name 'Relab LX480 Complete'
   homepage 'http://relab.dk/product/lx480-complete/'
 
-  pkg 'LX480 Complete.pkg'
+  pkg "LX480 Complete v#{version}.pkg"
 
   uninstall pkgutil: 'com.relab.pkg.LX480Complete.*'
 
