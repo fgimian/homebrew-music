@@ -1,6 +1,6 @@
 cask 'cytomic-the-drop' do
-  version '1.0.16'
-  sha256 '8158eab8d6e1f42260b94e4a33ef2539b323128d0f4c2518b85569ef705977cd'
+  version '1.5.2'
+  sha256 '5086b5663aae7798f75acc6e21136f763c92083939b3fdee1f1a361a39f3ccb1'
 
   url "https://cytomic.com/filedownload/TheDrop_v#{version}_Mac.dmg"
   name 'The Drop'
