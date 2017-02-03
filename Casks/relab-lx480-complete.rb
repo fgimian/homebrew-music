@@ -1,6 +1,6 @@
 cask 'relab-lx480-complete' do
-  version '2.2.4'
-  sha256 'd7c7f23bccaf899b8814b070b4213be8cb43c53b13faa4682927743bca066e5f'
+  version '2.2.5'
+  sha256 '7cda120b84986be2dc381cdd1fdf8e7104538d9ba7d9ca8d0c85c0d5c526664e'
 
   url 'http://www.relab.dk/public/products/LX480_Complete_mac.zip'
   name 'Relab LX480 Complete'

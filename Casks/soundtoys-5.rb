@@ -1,9 +1,9 @@
 cask 'soundtoys-5' do
-  version '5.1.1.12185'
-  sha256 'a4fe57ab97087230cae38fde926eb5ed6c880865ec42431bdc526547af7e03fe'
+  version '5.2.0.12502'
+  sha256 'e991f754a07e636f2671538859033e5c60d73079097ed8725c241872a2c2e2bd'
 
   # s3.amazonaws.com/soundtoys5 was verified as official when first introduced to the cask
-  url "https://s3.amazonaws.com/soundtoys5/12185/Soundtoys5_#{version}.dmg"
+  url "https://s3.amazonaws.com/soundtoys5/12502/Soundtoys5_#{version}.dmg"
   name 'Soundtoys 5'
   homepage 'http://www.soundtoys.com/product/soundtoys-5/'
 
