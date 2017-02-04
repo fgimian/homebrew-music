@@ -19,6 +19,6 @@ cask 'native-instruments-passive-eq' do
                 '~/Library/Application Support/Native Instruments/Passive EQ',
                 '~/Library/Preferences/com.native-instruments.PassiveEQ.plist',
                 '/Library/Application Support/Native Instruments/Passive EQ',
-                '/Library/Preferences/com.native-instruments.PassiveEQ.plist'
+                '/Library/Preferences/com.native-instruments.PassiveEQ.plist',
               ]
 end

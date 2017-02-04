@@ -19,6 +19,6 @@ cask 'native-instruments-supercharger-gt' do
                 '~/Library/Application Support/Native Instruments/Supercharger GT',
                 '~/Library/Preferences/com.native-instruments.SuperchargerGT.plist',
                 '/Library/Application Support/Native Instruments/Supercharger GT',
-                '/Library/Preferences/com.native-instruments.SuperchargerGT.plist'
+                '/Library/Preferences/com.native-instruments.SuperchargerGT.plist',
               ]
 end

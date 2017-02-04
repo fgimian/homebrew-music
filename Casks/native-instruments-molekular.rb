@@ -15,9 +15,9 @@ cask 'native-instruments-molekular' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Molekular_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Molekular_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-molekular' do
                 '~/Library/Application Support/Native Instruments/Molekular',
                 '~/Library/Preferences/com.native-instruments.Molekular.plist',
                 '/Library/Application Support/Native Instruments/Molekular',
-                '/Library/Preferences/com.native-instruments.Molekular.plist'
+                '/Library/Preferences/com.native-instruments.Molekular.plist',
               ]
 end

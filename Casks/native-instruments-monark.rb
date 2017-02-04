@@ -15,9 +15,9 @@ cask 'native-instruments-monark' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Monark_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Monark_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-monark' do
                 '~/Library/Application Support/Native Instruments/Monark',
                 '~/Library/Preferences/com.native-instruments.Monark.plist',
                 '/Library/Application Support/Native Instruments/Monark',
-                '/Library/Preferences/com.native-instruments.Monark.plist'
+                '/Library/Preferences/com.native-instruments.Monark.plist',
               ]
 end

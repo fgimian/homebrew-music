@@ -19,6 +19,6 @@ cask 'native-instruments-absynth-5' do
                 '~/Library/Application Support/Native Instruments/Absynth 5',
                 '~/Library/Preferences/com.native-instruments.Absynth5.plist',
                 '/Library/Application Support/Native Instruments/Absynth 5',
-                '/Library/Preferences/com.native-instruments.Absynth5.plist'
+                '/Library/Preferences/com.native-instruments.Absynth5.plist',
               ]
 end

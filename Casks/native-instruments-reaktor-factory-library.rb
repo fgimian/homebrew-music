@@ -15,9 +15,9 @@ cask 'native-instruments-reaktor-factory-library' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'ReaktorFactoryLibrary_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'ReaktorFactoryLibrary_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-reaktor-factory-library' do
                 '~/Library/Application Support/Native Instruments/Reaktor Factory Library',
                 '~/Library/Preferences/com.native-instruments.ReaktorFactoryLibrary.plist',
                 '/Library/Application Support/Native Instruments/Reaktor Factory Library',
-                '/Library/Preferences/com.native-instruments.ReaktorFactoryLibrary.plist'
+                '/Library/Preferences/com.native-instruments.ReaktorFactoryLibrary.plist',
               ]
 end

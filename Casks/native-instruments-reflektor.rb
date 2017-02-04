@@ -15,9 +15,9 @@ cask 'native-instruments-reflektor' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Reflektor_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Reflektor_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-reflektor' do
                 '~/Library/Application Support/Native Instruments/Reflektor',
                 '~/Library/Preferences/com.native-instruments.Reflektor.plist',
                 '/Library/Application Support/Native Instruments/Reflektor',
-                '/Library/Preferences/com.native-instruments.Reflektor.plist'
+                '/Library/Preferences/com.native-instruments.Reflektor.plist',
               ]
 end

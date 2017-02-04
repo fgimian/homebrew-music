@@ -15,9 +15,9 @@ cask 'native-instruments-polyplex' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Polyplex_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Polyplex_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-polyplex' do
                 '~/Library/Application Support/Native Instruments/Polyplex',
                 '~/Library/Preferences/com.native-instruments.Polyplex.plist',
                 '/Library/Application Support/Native Instruments/Polyplex',
-                '/Library/Preferences/com.native-instruments.Polyplex.plist'
+                '/Library/Preferences/com.native-instruments.Polyplex.plist',
               ]
 end

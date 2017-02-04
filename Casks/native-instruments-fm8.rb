@@ -19,6 +19,6 @@ cask 'native-instruments-fm8' do
                 '~/Library/Application Support/Native Instruments/FM8',
                 '~/Library/Preferences/com.native-instruments.FM8.plist',
                 '/Library/Application Support/Native Instruments/FM8',
-                '/Library/Preferences/com.native-instruments.FM8.plist'
+                '/Library/Preferences/com.native-instruments.FM8.plist',
               ]
 end

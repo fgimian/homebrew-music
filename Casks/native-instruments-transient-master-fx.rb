@@ -19,6 +19,6 @@ cask 'native-instruments-transient-master-fx' do
                 '~/Library/Application Support/Native Instruments/Transient Master FX',
                 '~/Library/Preferences/com.native-instruments.TransientMasterFX.plist',
                 '/Library/Application Support/Native Instruments/Transient Master FX',
-                '/Library/Preferences/com.native-instruments.TransientMasterFX.plist'
+                '/Library/Preferences/com.native-instruments.TransientMasterFX.plist',
               ]
 end

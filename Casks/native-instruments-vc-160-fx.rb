@@ -19,6 +19,6 @@ cask 'native-instruments-vc-160-fx' do
                 '~/Library/Application Support/Native Instruments/VC 160 FX',
                 '~/Library/Preferences/com.native-instruments.VC160FX.plist',
                 '/Library/Application Support/Native Instruments/VC 160 FX',
-                '/Library/Preferences/com.native-instruments.VC160FX.plist'
+                '/Library/Preferences/com.native-instruments.VC160FX.plist',
               ]
 end

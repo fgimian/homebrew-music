@@ -17,6 +17,6 @@ cask 'spectrasonics-omnisphere' do
 
   zap delete: [
                 '~/Library/Application Support/Spectrasonics',
-                '~/Library/Preferences/net.spectrasonics.V6.plist'
+                '~/Library/Preferences/net.spectrasonics.V6.plist',
               ]
 end

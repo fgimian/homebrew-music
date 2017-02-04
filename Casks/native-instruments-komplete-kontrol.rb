@@ -19,6 +19,6 @@ cask 'native-instruments-komplete-kontrol' do
                 '~/Library/Application Support/Native Instruments/Komplete Kontrol',
                 '~/Library/Preferences/com.native-instruments.KompleteKontrol.plist',
                 '/Library/Application Support/Native Instruments/Komplete Kontrol',
-                '/Library/Preferences/com.native-instruments.KompleteKontrol.plist'
+                '/Library/Preferences/com.native-instruments.KompleteKontrol.plist',
               ]
 end

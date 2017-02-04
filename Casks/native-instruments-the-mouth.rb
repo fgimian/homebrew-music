@@ -15,9 +15,9 @@ cask 'native-instruments-the-mouth' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'TheMouth_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'TheMouth_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-the-mouth' do
                 '~/Library/Application Support/Native Instruments/The Mouth',
                 '~/Library/Preferences/com.native-instruments.TheMouth.plist',
                 '/Library/Application Support/Native Instruments/The Mouth',
-                '/Library/Preferences/com.native-instruments.TheMouth.plist'
+                '/Library/Preferences/com.native-instruments.TheMouth.plist',
               ]
 end

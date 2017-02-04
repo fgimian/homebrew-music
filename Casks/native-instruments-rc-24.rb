@@ -19,6 +19,6 @@ cask 'native-instruments-rc-24' do
                 '~/Library/Application Support/Native Instruments/RC 24',
                 '~/Library/Preferences/com.native-instruments.RC24.plist',
                 '/Library/Application Support/Native Instruments/RC 24',
-                '/Library/Preferences/com.native-instruments.RC24.plist'
+                '/Library/Preferences/com.native-instruments.RC24.plist',
               ]
 end

@@ -15,9 +15,9 @@ cask 'native-instruments-flesh' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Flesh_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Flesh_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-flesh' do
                 '~/Library/Application Support/Native Instruments/Flesh',
                 '~/Library/Preferences/com.native-instruments.Flesh.plist',
                 '/Library/Application Support/Native Instruments/Flesh',
-                '/Library/Preferences/com.native-instruments.Flesh.plist'
+                '/Library/Preferences/com.native-instruments.Flesh.plist',
               ]
 end

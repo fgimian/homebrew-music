@@ -19,6 +19,6 @@ cask 'native-instruments-enhanced-eq' do
                 '~/Library/Application Support/Native Instruments/Enhanced EQ',
                 '~/Library/Preferences/com.native-instruments.EnhancedEQ.plist',
                 '/Library/Application Support/Native Instruments/Enhanced EQ',
-                '/Library/Preferences/com.native-instruments.EnhancedEQ.plist'
+                '/Library/Preferences/com.native-instruments.EnhancedEQ.plist',
               ]
 end

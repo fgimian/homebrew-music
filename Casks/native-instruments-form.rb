@@ -15,9 +15,9 @@ cask 'native-instruments-form' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Form_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Form_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-form' do
                 '~/Library/Application Support/Native Instruments/Form',
                 '~/Library/Preferences/com.native-instruments.Form.plist',
                 '/Library/Application Support/Native Instruments/Form',
-                '/Library/Preferences/com.native-instruments.Form.plist'
+                '/Library/Preferences/com.native-instruments.Form.plist',
               ]
 end

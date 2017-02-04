@@ -19,6 +19,6 @@ cask 'native-instruments-battery-4' do
                 '~/Library/Application Support/Native Instruments/Battery 4',
                 '~/Library/Preferences/com.native-instruments.Battery4.plist',
                 '/Library/Application Support/Native Instruments/Battery 4',
-                '/Library/Preferences/com.native-instruments.Battery4.plist'
+                '/Library/Preferences/com.native-instruments.Battery4.plist',
               ]
 end

@@ -15,9 +15,9 @@ cask 'native-instruments-rammfire' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Rammfire_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Rammfire_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-rammfire' do
                 '~/Library/Application Support/Native Instruments/Rammfire',
                 '~/Library/Preferences/com.native-instruments.Rammfire.plist',
                 '/Library/Application Support/Native Instruments/Rammfire',
-                '/Library/Preferences/com.native-instruments.Rammfire.plist'
+                '/Library/Preferences/com.native-instruments.Rammfire.plist',
               ]
 end

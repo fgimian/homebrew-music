@@ -19,6 +19,6 @@ cask 'native-instruments-vc-2a-fx' do
                 '~/Library/Application Support/Native Instruments/VC 2A FX',
                 '~/Library/Preferences/com.native-instruments.VC2AFX.plist',
                 '/Library/Application Support/Native Instruments/VC 2A FX',
-                '/Library/Preferences/com.native-instruments.VC2AFX.plist'
+                '/Library/Preferences/com.native-instruments.VC2AFX.plist',
               ]
 end

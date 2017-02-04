@@ -19,6 +19,6 @@ cask 'native-instruments-guitar-rig-5' do
                 '~/Library/Application Support/Native Instruments/Guitar Rig 5',
                 '~/Library/Preferences/com.native-instruments.GuitarRig5.plist',
                 '/Library/Application Support/Native Instruments/Guitar Rig 5',
-                '/Library/Preferences/com.native-instruments.GuitarRig5.plist'
+                '/Library/Preferences/com.native-instruments.GuitarRig5.plist',
               ]
 end

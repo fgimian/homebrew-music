@@ -15,9 +15,9 @@ cask 'native-instruments-reaktor-spark-r2' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'ReaktorSparkR2_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'ReaktorSparkR2_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-reaktor-spark-r2' do
                 '~/Library/Application Support/Native Instruments/Reaktor Spark R2',
                 '~/Library/Preferences/com.native-instruments.ReaktorSparkR2.plist',
                 '/Library/Application Support/Native Instruments/Reaktor Spark R2',
-                '/Library/Preferences/com.native-instruments.ReaktorSparkR2.plist'
+                '/Library/Preferences/com.native-instruments.ReaktorSparkR2.plist',
               ]
 end

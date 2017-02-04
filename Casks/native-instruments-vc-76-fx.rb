@@ -19,6 +19,6 @@ cask 'native-instruments-vc-76-fx' do
                 '~/Library/Application Support/Native Instruments/VC 76 FX',
                 '~/Library/Preferences/com.native-instruments.VC76FX.plist',
                 '/Library/Application Support/Native Instruments/VC 76 FX',
-                '/Library/Preferences/com.native-instruments.VC76FX.plist'
+                '/Library/Preferences/com.native-instruments.VC76FX.plist',
               ]
 end

@@ -15,9 +15,9 @@ cask 'native-instruments-kontour' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Kontour_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Kontour_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-kontour' do
                 '~/Library/Application Support/Native Instruments/Kontour',
                 '~/Library/Preferences/com.native-instruments.Kontour.plist',
                 '/Library/Application Support/Native Instruments/Kontour',
-                '/Library/Preferences/com.native-instruments.Kontour.plist'
+                '/Library/Preferences/com.native-instruments.Kontour.plist',
               ]
 end

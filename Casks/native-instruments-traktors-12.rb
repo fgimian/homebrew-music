@@ -15,9 +15,9 @@ cask 'native-instruments-traktors-12' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Traktors12_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Traktors12_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-traktors-12' do
                 '~/Library/Application Support/Native Instruments/Traktors 12',
                 '~/Library/Preferences/com.native-instruments.Traktors12.plist',
                 '/Library/Application Support/Native Instruments/Traktors 12',
-                '/Library/Preferences/com.native-instruments.Traktors12.plist'
+                '/Library/Preferences/com.native-instruments.Traktors12.plist',
               ]
 end

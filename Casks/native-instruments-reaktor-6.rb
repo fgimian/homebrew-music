@@ -19,6 +19,6 @@ cask 'native-instruments-reaktor-6' do
                 '~/Library/Application Support/Native Instruments/Reaktor 6',
                 '~/Library/Preferences/com.native-instruments.Reaktor6.plist',
                 '/Library/Application Support/Native Instruments/Reaktor 6',
-                '/Library/Preferences/com.native-instruments.Reaktor6.plist'
+                '/Library/Preferences/com.native-instruments.Reaktor6.plist',
               ]
 end

@@ -15,9 +15,9 @@ cask 'native-instruments-rounds' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Rounds_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Rounds_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-rounds' do
                 '~/Library/Application Support/Native Instruments/Rounds',
                 '~/Library/Preferences/com.native-instruments.Rounds.plist',
                 '/Library/Application Support/Native Instruments/Rounds',
-                '/Library/Preferences/com.native-instruments.Rounds.plist'
+                '/Library/Preferences/com.native-instruments.Rounds.plist',
               ]
 end

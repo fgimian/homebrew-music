@@ -19,6 +19,6 @@ cask 'native-instruments-solid-eq-fx' do
                 '~/Library/Application Support/Native Instruments/Solid EQ FX',
                 '~/Library/Preferences/com.native-instruments.SolidEQFX.plist',
                 '/Library/Application Support/Native Instruments/Solid EQ FX',
-                '/Library/Preferences/com.native-instruments.SolidEQFX.plist'
+                '/Library/Preferences/com.native-instruments.SolidEQFX.plist',
               ]
 end

@@ -15,9 +15,9 @@ cask 'native-instruments-razor' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'Razor_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'Razor_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-razor' do
                 '~/Library/Application Support/Native Instruments/Razor',
                 '~/Library/Preferences/com.native-instruments.Razor.plist',
                 '/Library/Application Support/Native Instruments/Razor',
-                '/Library/Preferences/com.native-instruments.Razor.plist'
+                '/Library/Preferences/com.native-instruments.Razor.plist',
               ]
 end

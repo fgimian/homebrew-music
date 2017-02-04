@@ -19,6 +19,6 @@ cask 'native-instruments-replika-xt' do
                 '~/Library/Application Support/Native Instruments/Replika XT',
                 '~/Library/Preferences/com.native-instruments.ReplikaXT.plist',
                 '/Library/Application Support/Native Instruments/Replika XT',
-                '/Library/Preferences/com.native-instruments.ReplikaXT.plist'
+                '/Library/Preferences/com.native-instruments.ReplikaXT.plist',
               ]
 end

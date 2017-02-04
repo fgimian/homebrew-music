@@ -15,9 +15,9 @@ cask 'native-instruments-reaktor-prism' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'ReaktorPrism_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'ReaktorPrism_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-reaktor-prism' do
                 '~/Library/Application Support/Native Instruments/Reaktor Prism',
                 '~/Library/Preferences/com.native-instruments.ReaktorPrism.plist',
                 '/Library/Application Support/Native Instruments/Reaktor Prism',
-                '/Library/Preferences/com.native-instruments.ReaktorPrism.plist'
+                '/Library/Preferences/com.native-instruments.ReaktorPrism.plist',
               ]
 end

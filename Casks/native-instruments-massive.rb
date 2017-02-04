@@ -19,6 +19,6 @@ cask 'native-instruments-massive' do
                 '~/Library/Application Support/Native Instruments/Massive',
                 '~/Library/Preferences/com.native-instruments.Massive.plist',
                 '/Library/Application Support/Native Instruments/Massive',
-                '/Library/Preferences/com.native-instruments.Massive.plist'
+                '/Library/Preferences/com.native-instruments.Massive.plist',
               ]
 end

@@ -15,9 +15,9 @@ cask 'native-instruments-skanner-xt' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'SkannerXT_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'SkannerXT_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-skanner-xt' do
                 '~/Library/Application Support/Native Instruments/Skanner XT',
                 '~/Library/Preferences/com.native-instruments.SkannerXT.plist',
                 '/Library/Application Support/Native Instruments/Skanner XT',
-                '/Library/Preferences/com.native-instruments.SkannerXT.plist'
+                '/Library/Preferences/com.native-instruments.SkannerXT.plist',
               ]
 end

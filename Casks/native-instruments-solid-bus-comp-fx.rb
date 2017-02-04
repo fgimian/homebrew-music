@@ -19,6 +19,6 @@ cask 'native-instruments-solid-bus-comp-fx' do
                 '~/Library/Application Support/Native Instruments/Solid Bus Comp FX',
                 '~/Library/Preferences/com.native-instruments.SolidBusCompFX.plist',
                 '/Library/Application Support/Native Instruments/Solid Bus Comp FX',
-                '/Library/Preferences/com.native-instruments.SolidBusCompFX.plist'
+                '/Library/Preferences/com.native-instruments.SolidBusCompFX.plist',
               ]
 end

@@ -12,7 +12,7 @@ cask 'sonalksis-multiband-dynamics' do
   stage_only true
 
   postflight do
-    ['CQ1', 'DQ1'].each do |product|
+    %w[CQ1 DQ1].each do |product|
       # VST
       Dir.glob("/Library/Application Support/Sonalksis/PluginManagerOfflineRepository/components/MAC/Sonalksis #{product}*.vst.zip") do |archive|
         system '/usr/bin/unzip', '-qq', archive, '-d', '/Library/Audio/Plug-Ins/VST'

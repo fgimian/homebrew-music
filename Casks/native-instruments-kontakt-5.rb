@@ -19,6 +19,6 @@ cask 'native-instruments-kontakt-5' do
                 '~/Library/Application Support/Native Instruments/Kontakt 5',
                 '~/Library/Preferences/com.native-instruments.Kontakt5.plist',
                 '/Library/Application Support/Native Instruments/Kontakt 5',
-                '/Library/Preferences/com.native-instruments.Kontakt5.plist'
+                '/Library/Preferences/com.native-instruments.Kontakt5.plist',
               ]
 end

@@ -19,6 +19,6 @@ cask 'native-instruments-driver' do
                 '~/Library/Application Support/Native Instruments/Driver',
                 '~/Library/Preferences/com.native-instruments.Driver.plist',
                 '/Library/Application Support/Native Instruments/Driver',
-                '/Library/Preferences/com.native-instruments.Driver.plist'
+                '/Library/Preferences/com.native-instruments.Driver.plist',
               ]
 end

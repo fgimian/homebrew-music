@@ -19,6 +19,6 @@ cask 'native-instruments-vari-comp' do
                 '~/Library/Application Support/Native Instruments/Vari Comp',
                 '~/Library/Preferences/com.native-instruments.VariComp.plist',
                 '/Library/Application Support/Native Instruments/Vari Comp',
-                '/Library/Preferences/com.native-instruments.VariComp.plist'
+                '/Library/Preferences/com.native-instruments.VariComp.plist',
               ]
 end

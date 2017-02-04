@@ -19,6 +19,6 @@ cask 'native-instruments-solid-dynamics-fx' do
                 '~/Library/Application Support/Native Instruments/Solid Dynamics FX',
                 '~/Library/Preferences/com.native-instruments.SolidDynamicsFX.plist',
                 '/Library/Application Support/Native Instruments/Solid Dynamics FX',
-                '/Library/Preferences/com.native-instruments.SolidDynamicsFX.plist'
+                '/Library/Preferences/com.native-instruments.SolidDynamicsFX.plist',
               ]
 end

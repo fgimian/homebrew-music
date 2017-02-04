@@ -15,9 +15,9 @@ cask 'native-instruments-reaktor-blocks' do
       choices: [
                  # Set library installation path
                  {
-                   'choiceIdentifier'  => 'ReaktorBlocks_Library',
-                   'choiceAttribute'   => 'customLocation',
-                   'attributeSetting'  => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared')
+                   'choiceIdentifier' => 'ReaktorBlocks_Library',
+                   'choiceAttribute'  => 'customLocation',
+                   'attributeSetting' => ENV.fetch('NATIVE_INSTRUMENTS_CONTENT_LOCATION', '/Users/Shared'),
                  },
                ]
 
@@ -27,6 +27,6 @@ cask 'native-instruments-reaktor-blocks' do
                 '~/Library/Application Support/Native Instruments/Reaktor Blocks',
                 '~/Library/Preferences/com.native-instruments.ReaktorBlocks.plist',
                 '/Library/Application Support/Native Instruments/Reaktor Blocks',
-                '/Library/Preferences/com.native-instruments.ReaktorBlocks.plist'
+                '/Library/Preferences/com.native-instruments.ReaktorBlocks.plist',
               ]
 end
