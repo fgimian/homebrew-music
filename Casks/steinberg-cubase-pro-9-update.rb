@@ -1,6 +1,6 @@
 cask 'steinberg-cubase-pro-9-update' do
-  version '9.0.1'
-  sha256 '2abcb96745ed3ea34efedca282a94cac816312e9d223b872789eb3a3882ec389'
+  version '9.0.10'
+  sha256 '773896bf97a8135ecfa38c815fa83caa4e54443ef84aa4d085a1c89af13e02cb'
 
   url "http://download.steinberg.net/downloads_software/Cubase_Pro_9_and_Cubase_Artist_9/#{version}/Mac/Cubase_#{version}_Update_mac.dmg"
   name 'Steinberg Cubase Pro (Update)'
