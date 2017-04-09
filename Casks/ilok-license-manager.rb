@@ -11,6 +11,6 @@ cask 'ilok-license-manager.rb' do
   zap delete: [
                 '~/Library/Caches/com.paceap.iLokLicenseManager',
                 '~/Library/Preferences/com.paceap.iLokLicenseManager.plist',
-                '~/Library/Saved Application State/com.paceap.eden.iLokLicenseManager.savedState'
+                '~/Library/Saved Application State/com.paceap.eden.iLokLicenseManager.savedState',
               ]
 end
