@@ -3,11 +3,11 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'softube-amp-room-essentials' do
-  version '2.3.90'
-  sha256 'fc046b39fdb148a524d24714ede067d823b8b28ec9462f380ebbfae57a1d75e0'
+  version '2.4.11'
+  sha256 '789d7288fd8a10313ff61121db78bd4d1a8852e6fa9c9e548405e69a8aae7e23'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/Amp_Room_Essentials-2.3.90-20161021-20617-1x5biwx.zip")
+  url URI.encode("file://#{base_dir}/Softube/Amp_Room_Essentials-2.4.11-20170330-7740-td0odh.zip")
   name 'Softube Amp Room Essentials'
   homepage 'https://www.softube.com/index.php?id=arb'
 

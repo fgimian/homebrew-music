@@ -3,11 +3,11 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'softube-tsar-1r' do
-  version '2.3.90'
-  sha256 '6f92c33f1481b86efd16af247a4527643a4d6a1114def46ba51f65d6fbdaf223'
+  version '2.4.11'
+  sha256 'e5f7fe3be704d5261ff2ef1eb9737d4c3fa719923b99224e9b6551c9e2a25a6e'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/TSAR-1R-2.3.90-20161021-20617-woh1p5.zip")
+  url URI.encode("file://#{base_dir}/Softube/TSAR-1R-2.4.11-20170330-7740-1c7dzx1.zip")
   name 'Softube TSAR-1R'
   homepage 'https://www.softube.com/index.php?id=tsar1r'
 

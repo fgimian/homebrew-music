@@ -3,11 +3,11 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'softube-fet-compressor' do
-  version '2.3.90'
-  sha256 '33ad2996c195b9936040fc1050b712381796db5fa3fce537d9e69e31ff54522b'
+  version '2.4.11'
+  sha256 'e8fa8bb814f5ff5e005c098f4c7f2311904cec6b14c425c1f7449075aff641c6'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/FET_Compressor-2.3.90-20161021-20617-ijpuob.zip")
+  url URI.encode("file://#{base_dir}/Softube/FET_Compressor-2.4.11-20170330-7740-aj8tv3.zip")
   name 'Softube FET Compressor'
   homepage 'https://www.softube.com/index.php?id=fc'
 

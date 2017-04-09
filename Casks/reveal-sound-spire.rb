@@ -1,6 +1,6 @@
 cask 'reveal-sound-spire' do
-  version '1.1.9'
-  sha256 '916941d4d1b8a5060b107b7e2dfdd0378ada4c47b3c1abe58f557c223a1cbcf0'
+  version '1.1.11'
+  sha256 '057d00e8e738bab7d2503780f493c50a07972d2835b0b1d4ef3b57b4185d8165'
 
   url "http://www.reveal-sound.com/downloads/distrib/Spire-#{version}-Mac.zip"
   name 'Reveal Sound Spire'

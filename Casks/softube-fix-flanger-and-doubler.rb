@@ -3,11 +3,11 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'softube-fix-flanger-and-doubler' do
-  version '2.3.90'
-  sha256 '3889bd3a947f03b4d2d5331497fa9f50389bed73e406ff814ccf80f7954f109b'
+  version '2.4.11'
+  sha256 'bcdac47aec68497e225f1db7556881614d51ca49a287dda39245e4353146a443'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/Fix_Flanger_and_Doubler-2.3.90-20161021-20617-1mtgkye.zip")
+  url URI.encode("file://#{base_dir}/Softube/Fix_Flanger_and_Doubler-2.4.11-20170330-7740-f7vx93.zip")
   name 'Softube Fix Flanger and Doubler'
   homepage 'https://www.softube.com/index.php?id=fixfd'
 

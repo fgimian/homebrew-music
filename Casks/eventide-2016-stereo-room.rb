@@ -1,6 +1,6 @@
 cask 'eventide-2016-stereo-room' do
-  version '2.2.4'
-  sha256 '55fb5ec534f2c934a5870379846d7d23bc86f89b558133953c840dc7cf018881'
+  version '2.2.5'
+  sha256 '7054268579948a0befb44ca4c4deb198a3001968694f2d6517b54944e24fad83'
 
   url 'https://www.eventideaudio.com/downloader/1165'
   name 'Eventide 2016 Stereo Room'

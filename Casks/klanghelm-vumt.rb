@@ -3,7 +3,7 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'klanghelm-vumt' do
-  version '2.1.0'
+  version '2.1.1'
   sha256 'c9380a9c9fd7057fba0c66c9af13264f869eeec937d019eccfb4204fef6d1c95'
 
   # :base_dir was verified as official when first introduced to the cask

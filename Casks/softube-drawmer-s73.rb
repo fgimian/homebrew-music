@@ -3,11 +3,11 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'softube-drawmer-s73' do
-  version '2.3.90'
-  sha256 '5f17353bd8a315bbd043594702a0ff9bdb2060c40976ecb9188610196ec09b6a'
+  version '2.4.11'
+  sha256 'dee7c2657500ae11e3236756fa078761f5bb21f3c6f31f18115e7aeb320bd506'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/Drawmer_S73-2.3.90-20161021-20617-mevjot.zip")
+  url URI.encode("file://#{base_dir}/Softube/Drawmer_S73-2.4.11-20170330-7740-1bht5zl.zip")
   name 'Softube Drawmer S73'
   homepage 'https://www.softube.com/index.php?id=drawmers73'
 
