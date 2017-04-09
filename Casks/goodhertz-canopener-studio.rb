@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'goodhertz-canopener-studio' do
   version '2.0.1-r2'
   sha256 'ebb51edb878a6d9fa13f89f0975cd8908b07cf75a48209b3d4683d7b088023ec'
 
-  url "http://downloads.goodhertz.co/installers/release/Goodhertz-Installer-v#{version}.pkg"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/Goodhertz/Goodhertz-Installer-v#{version}.pkg")
   name 'Goodhertz CanOpener Studio'
   homepage 'https://goodhertz.co/canopener-studio'
 

@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'dmgaudio-trackmeter' do
   version '1.00'
   sha256 '2a9570d8cab1941aacf6ab85c9fac9e9a226635d89c45c6762b2df431ba87680'
 
-  url "https://dmgaudio.com/dl/TrackMeter_v#{version}/TrackMeterMac_v#{version}.zip"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/DMGAudio/TrackMeterMac_v#{version}.zip")
   name 'DMGAudio TrackMeter'
   homepage 'https://dmgaudio.com/products_TrackMeter.php'
 

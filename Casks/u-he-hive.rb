@@ -1,9 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'u-he-hive' do
   version '1.1'
   sha256 '57e2a2285f391154b40b10b92f428873ce45c941d48940d5adb671276fdbecd3'
 
-  # uhedownloads-heckmannaudiogmb.netdna-ssl.com was verified as official when first introduced to the cask
-  url "https://uhedownloads-heckmannaudiogmb.netdna-ssl.com/Releases/Hive_#{version.gsub('.', '_')}_Mac.zip"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/u-he/Hive_#{version.gsub('.', '_')}_Mac.zip")
   name 'u-he Hive'
   homepage 'https://www.u-he.com/cms/hive'
 

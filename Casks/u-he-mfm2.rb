@@ -1,9 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'u-he-mfm2' do
   version '2.2.1'
   sha256 'ea9342b5a524f88a3e35da8c57b9d1187a00a0a7e0f36ce55f049edfcefef3dd'
 
-  # uhedownloads-heckmannaudiogmb.netdna-ssl.com was verified as official when first introduced to the cask
-  url "https://uhedownloads-heckmannaudiogmb.netdna-ssl.com/Releases/MFM2_#{version.gsub('.', '_')}_Mac.zip"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/u-he/MFM2_#{version.gsub('.', '_')}_Mac.zip")
   name 'u-he MFM2'
   homepage 'https://www.u-he.com/cms/mfm2'
 

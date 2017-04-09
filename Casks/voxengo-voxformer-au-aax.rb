@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'voxengo-voxformer-au-aax' do
   version '2.11'
   sha256 '17107defe3321a9521d55a644067f55cca4d34b42bf151338194359dfadb3809'
 
-  url "http://www.voxengo.com/files/VoxengoVoxformer_#{version.gsub('.', '')}_Mac_AU_AAX_setup.dmg"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/Voxengo/VoxengoVoxformer_#{version.gsub('.', '')}_Mac_AU_AAX_setup.dmg")
   name 'Voxengo Voxformer (AU & AAX)'
   homepage 'http://www.voxengo.com/product/voxformer/'
 

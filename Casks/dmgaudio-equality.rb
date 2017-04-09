@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'dmgaudio-equality' do
   version '1.30'
   sha256 'e18cc6b48d66a0072fe681bd139899bbbfc150d8c3d13381e0604a425d822cd1'
 
-  url "https://dmgaudio.com/dl/EQuality_v#{version}/EQualityMac_v#{version}.zip"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/DMGAudio/EQualityMac_v#{version}.zip")
   name 'DMGAudio EQuality'
   homepage 'https://dmgaudio.com/products_equality.php'
 

@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'dmgaudio-expurgate' do
   version '1.02'
   sha256 '65d9692a853f2098ee74dd307d316293f22c6bde07678cc62b72e4c08051b41b'
 
-  url "https://dmgaudio.com/dl/Expurgate_v#{version}/ExpurgateMac_v#{version}.zip"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/DMGAudio/ExpurgateMac_v#{version}.zip")
   name 'DMGAudio Expurgate'
   homepage 'https://dmgaudio.com/products_expurgate.php'
 

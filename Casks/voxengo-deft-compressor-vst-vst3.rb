@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'voxengo-deft-compressor-vst-vst3' do
   version '1.7'
   sha256 'f63de9393d0418897b578447a2af63377967f4501329206239fa2f541c89612a'
 
-  url "http://www.voxengo.com/files/VoxengoDeftCompressor_#{version.gsub('.', '')}_Mac_VST_VST3_setup.dmg"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/Voxengo/VoxengoDeftCompressor_#{version.gsub('.', '')}_Mac_VST_VST3_setup.dmg")
   name 'Voxengo Deft Compressor (VST & VST3)'
   homepage 'http://www.voxengo.com/product/deftcompressor/'
 

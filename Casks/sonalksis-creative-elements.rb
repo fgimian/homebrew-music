@@ -1,9 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'sonalksis-creative-elements' do
   version '3.02'
   sha256 '2673e99d853e8a3b0faf421fb9c11090adb553c0c366074dad0f578fcf51c06a'
 
-  # storage.googleapis.com/sienda-eu was verified as official when first introduced to the cask
-  url 'https://storage.googleapis.com/sienda-eu/plugrepo/pluginmanager/Sonalksis%20Plugin%20Manager%20Offline%20Installer.zip'
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/Sonalksis/Sonalksis%20Plugin%20Manager%20Offline%20Installer.zip")
   name 'Sonalksis Creative Elements'
   homepage 'https://www.sonalksis.com/plug-ins.html'
 

@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'dmgaudio-tracklimit' do
   version '1.00'
   sha256 'd4899462e868bd34536ae370a4c65f66b5ef2470c7b354f0434a6ea887984572'
 
-  url "https://dmgaudio.com/dl/TrackLimit_v#{version}/TrackLimitMac_v#{version}.zip"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/DMGAudio/TrackLimitMac_v#{version}.zip")
   name 'DMGAudio TrackLimit'
   homepage 'https://dmgaudio.com/products_TrackLimit.php'
 

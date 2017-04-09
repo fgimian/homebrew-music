@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'dmgaudio-trackgate' do
   version '1.00'
   sha256 'c46c45b3fdda106e37ad291a02355ff44da142c774bde800f14bbbdeaf23ac25'
 
-  url "https://dmgaudio.com/dl/TrackGate_v#{version}/TrackGateMac_v#{version}.zip"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/DMGAudio/TrackGateMac_v#{version}.zip")
   name 'DMGAudio TrackGate'
   homepage 'https://dmgaudio.com/products_TrackGate.php'
 

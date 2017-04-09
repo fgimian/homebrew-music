@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'dmgaudio-pitchfunk' do
   version '1.12'
   sha256 'c745379209b894e9bf6978b5333c6cdae54ebed7f0ef0c67bc23291910087ee4'
 
-  url "https://dmgaudio.com/dl/PitchFunk_v#{version}/PitchFunkMac_v#{version}.zip"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/DMGAudio/PitchFunkMac_v#{version}.zip")
   name 'DMGAudio PitchFunk'
   homepage 'https://dmgaudio.com/products_pitchfunk.php'
 

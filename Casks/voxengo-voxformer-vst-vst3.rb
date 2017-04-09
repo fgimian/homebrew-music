@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'voxengo-voxformer-vst-vst3' do
   version '2.11'
   sha256 'e846cda09079fe99e679227536a75873f754df276cf37a579de99eafc09798d7'
 
-  url "http://www.voxengo.com/files/VoxengoVoxformer_#{version.gsub('.', '')}_Mac_VST_VST3_setup.dmg"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/Voxengo/VoxengoVoxformer_#{version.gsub('.', '')}_Mac_VST_VST3_setup.dmg")
   name 'Voxengo Voxformer (VST & VST3)'
   homepage 'http://www.voxengo.com/product/voxformer/'
 

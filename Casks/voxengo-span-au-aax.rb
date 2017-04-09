@@ -1,8 +1,13 @@
+require 'open-uri'
+
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+
 cask 'voxengo-span-au-aax' do
   version '3.1'
   sha256 '025163dbecae1da3c6ca5984109f3b94ee8fcbc6153242a905fa1a202d133efd'
 
-  url "http://www.voxengo.com/files/VoxengoSPAN_#{version.gsub('.', '')}_Mac_AU_AAX_setup.dmg"
+  # :base_dir was verified as official when first introduced to the cask
+  url URI.encode("file://#{base_dir}/Voxengo/VoxengoSPAN_#{version.gsub('.', '')}_Mac_AU_AAX_setup.dmg")
   name 'Voxengo SPAN (AU & AAX)'
   homepage 'http://www.voxengo.com/product/span/'
 
