@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'native-instruments-reaktor-6' do
-  version '6.1.0'
-  sha256 '8f90326e51d329ad8e005bf3051a15e89367d5c7177353a8ed84aab957f6f55c'
+  version '6.1.1'
+  sha256 'c7ca6f4c7ccc032d3d40ba75b8ddda11d3afc758b7fce8280857fd00ce6b2eef'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Native Instruments/Reaktor_6.iso")

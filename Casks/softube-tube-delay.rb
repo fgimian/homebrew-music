@@ -11,7 +11,7 @@ cask 'softube-tube-delay' do
   name 'Softube Tube Delay'
   homepage 'https://www.softube.com/index.php?id=td'
 
-  pkg "Softube Tube Delay Installer #{version}.pkg"
+  pkg "Softube Tube Delay Installer 2.4.11 r270909.pkg"
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_Tube_Delay.*'
 

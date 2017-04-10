@@ -11,7 +11,7 @@ cask 'softube-amp-room-essentials' do
   name 'Softube Amp Room Essentials'
   homepage 'https://www.softube.com/index.php?id=arb'
 
-  pkg "Softube Amp Room Essentials Installer #{version}.pkg"
+  pkg "Softube Amp Room Essentials Installer 2.4.11 r270909.pkg"
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_Amp_Room_Essentials.*'
 

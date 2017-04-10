@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'native-instruments-form' do
-  version '1.0.1'
-  sha256 'aa1fee7a6ecc0b5d92f5405eff65efd5c93ecec0561e53a9ddb9cd623b82d788'
+  version '1.1.0'
+  sha256 '538be24764d58a1b65fe987d2ac1140bccb4dd9be26448d5c55d00469552c830'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Native Instruments/Form.iso")

@@ -11,7 +11,7 @@ cask 'softube-tsar-1r' do
   name 'Softube TSAR-1R'
   homepage 'https://www.softube.com/index.php?id=tsar1r'
 
-  pkg "Softube TSAR-1R Reverb Installer #{version}.pkg"
+  pkg "Softube TSAR-1R Reverb Installer 2.4.11 r270909.pkg"
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_TSAR-1R_Reverb.*'
 
