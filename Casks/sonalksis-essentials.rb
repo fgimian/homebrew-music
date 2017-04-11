@@ -7,7 +7,7 @@ cask 'sonalksis-essentials' do
   sha256 '2673e99d853e8a3b0faf421fb9c11090adb553c0c366074dad0f578fcf51c06a'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Sonalksis/Sonalksis%20Plugin%20Manager%20Offline%20Installer.zip")
+  url URI.encode("file://#{base_dir}/Sonalksis/Sonalksis Plugin Manager Offline Installer.zip")
   name 'Sonalksis Essentials'
   homepage 'https://www.sonalksis.com/plug-ins.html'
 
