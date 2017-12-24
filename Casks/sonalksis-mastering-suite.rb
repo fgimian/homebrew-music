@@ -13,8 +13,6 @@ cask 'sonalksis-mastering-suite' do
 
   depends_on cask: 'sonalksis-plugin-manager'
 
-  stage_only true
-
   postflight do
     ['MultiLimit', 'MaxLimit', 'StereoTools', 'Ultimate-D'].each do |product|
       # VST

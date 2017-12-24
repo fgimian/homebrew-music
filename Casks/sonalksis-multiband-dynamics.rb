@@ -13,8 +13,6 @@ cask 'sonalksis-multiband-dynamics' do
 
   depends_on cask: 'sonalksis-plugin-manager'
 
-  stage_only true
-
   postflight do
     %w[CQ1 DQ1].each do |product|
       # VST

@@ -13,8 +13,6 @@ cask 'sonalksis-freeg' do
 
   depends_on cask: 'sonalksis-plugin-manager'
 
-  stage_only true
-
   postflight do
     # VST
     Dir.glob('/Library/Application Support/Sonalksis/PluginManagerOfflineRepository/components/MAC/Sonalksis FreeG*.vst.zip') do |archive|
