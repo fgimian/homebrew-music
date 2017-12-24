@@ -11,7 +11,7 @@ cask 'artsacoustic-reverb' do
   name 'ArtsAcoustic Reverb'
   homepage 'http://www.artsacoustic.com/artsacoustic_reverb.php'
 
-  pkg 'ArtsAcousticReverb.pkg'
+  pkg 'ArtsAcousticReverb.pkg', allow_untrusted: true
 
   uninstall pkgutil: 'com.artsacoustic.pkg.ArtsAcousticReverb*'
 
