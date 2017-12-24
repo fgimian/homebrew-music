@@ -11,13 +11,13 @@ cask 'softube-fet-compressor' do
   name 'Softube FET Compressor'
   homepage 'https://www.softube.com/index.php?id=fc'
 
-  pkg "Softube FET Compressor Installer 2.4.11 r270909.pkg"
+  pkg 'Softube FET Compressor Installer 2.4.11 r270909.pkg'
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_FET_Compressor.*'
 
   zap delete: [
                 '/Library/Application Support/Softube/FET Compressor.txt',
-                '/Library/Application Support/Softube/Softube FET Compressor Uninstaller #{version}.pkg',
+                "/Library/Application Support/Softube/Softube FET Compressor Uninstaller #{version}.pkg",
                 '/Library/Application Support/Softube/SSX/FET Compressor.ssx',
               ]
 end

@@ -11,13 +11,13 @@ cask 'softube-drawmer-s73' do
   name 'Softube Drawmer S73'
   homepage 'https://www.softube.com/index.php?id=drawmers73'
 
-  pkg "Softube Drawmer S73 Installer 2.4.11 r270909.pkg"
+  pkg 'Softube Drawmer S73 Installer 2.4.11 r270909.pkg'
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_Drawmer_S73.*'
 
   zap delete: [
                 '~/Library/Application Support/Softube/Drawmer S73.txt',
-                '/Library/Application Support/Softube/Softube Drawmer S73 Uninstaller #{version}.pkg',
+                "/Library/Application Support/Softube/Softube Drawmer S73 Uninstaller #{version}.pkg",
                 '/Library/Application Support/Softube/SSX/Drawmer S73.ssx',
               ]
 end

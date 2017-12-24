@@ -11,12 +11,12 @@ cask 'softube-saturation-knob' do
   name 'Softube Saturation Knob'
   homepage 'https://www.softube.com/index.php?id=satknob'
 
-  pkg "Softube Saturation Knob Installer 2.4.11 r270909.pkg"
+  pkg 'Softube Saturation Knob Installer 2.4.11 r270909.pkg'
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_Saturation_Knob.*'
 
   zap delete: [
                 '~/Library/Application Support/Softube/Saturation Knob.txt',
-                '/Library/Application Support/Softube/Softube Saturation Knob Uninstaller #{version}.pkg',
+                "/Library/Application Support/Softube/Softube Saturation Knob Uninstaller #{version}.pkg",
               ]
 end

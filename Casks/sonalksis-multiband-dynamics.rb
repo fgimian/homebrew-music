@@ -14,7 +14,7 @@ cask 'sonalksis-multiband-dynamics' do
   depends_on cask: 'sonalksis-plugin-manager'
 
   postflight do
-    %w[CQ1 DQ1].each do |product|
+    ['CQ1', 'DQ1'].each do |product|
       # VST
       Dir.glob("/Library/Application Support/Sonalksis/PluginManagerOfflineRepository/components/MAC/Sonalksis #{product}*.vst.zip") do |archive|
         system '/usr/bin/unzip', '-qq', archive, '-d', '/Library/Audio/Plug-Ins/VST'

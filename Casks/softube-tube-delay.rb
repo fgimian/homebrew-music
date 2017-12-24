@@ -11,12 +11,12 @@ cask 'softube-tube-delay' do
   name 'Softube Tube Delay'
   homepage 'https://www.softube.com/index.php?id=td'
 
-  pkg "Softube Tube Delay Installer 2.4.11 r270909.pkg"
+  pkg 'Softube Tube Delay Installer 2.4.11 r270909.pkg'
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_Tube_Delay.*'
 
   zap delete: [
                 '~/Library/Application Support/Softube/Tube Delay.txt',
-                '/Library/Application Support/Softube/Softube Tube Delay Uninstaller #{version}.pkg',
+                "/Library/Application Support/Softube/Softube Tube Delay Uninstaller #{version}.pkg",
               ]
 end

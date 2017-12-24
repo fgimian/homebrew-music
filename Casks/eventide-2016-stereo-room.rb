@@ -12,7 +12,7 @@ cask 'eventide-2016-stereo-room' do
   homepage 'https://www.eventideaudio.com/products/plugins/reverb/2016-stereo-room'
 
   installer script: "2016-Stereo-Room-#{version}-osx-installer.app/Contents/MacOS/installbuilder.sh",
-            args:   %w[--mode unattended],
+            args:   ['--mode', 'unattended'],
             sudo:   true
 
   zap delete: [

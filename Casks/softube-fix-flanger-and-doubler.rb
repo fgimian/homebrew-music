@@ -11,13 +11,13 @@ cask 'softube-fix-flanger-and-doubler' do
   name 'Softube Fix Flanger and Doubler'
   homepage 'https://www.softube.com/index.php?id=fixfd'
 
-  pkg "Softube Fix Flanger and Doubler Installer 2.4.11 r270909.pkg"
+  pkg 'Softube Fix Flanger and Doubler Installer 2.4.11 r270909.pkg'
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_Fix_Flanger_and_Doubler.*'
 
   zap delete: [
                 '~/Library/Application Support/Softube/Fix Doubler.txt',
                 '~/Library/Application Support/Softube/Fix Flanger.txt',
-                '/Library/Application Support/Softube/Softube Fix Flanger and Doubler Uninstaller #{version}.pkg',
+                "/Library/Application Support/Softube/Softube Fix Flanger and Doubler Uninstaller #{version}.pkg",
               ]
 end
