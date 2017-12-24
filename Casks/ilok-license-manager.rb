@@ -1,4 +1,4 @@
-cask 'ilok-license-manager.rb' do
+cask 'ilok-license-manager' do
   version :latest
   sha256 :no_check
 
