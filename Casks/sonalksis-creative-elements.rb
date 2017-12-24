@@ -13,8 +13,6 @@ cask 'sonalksis-creative-elements' do
 
   depends_on cask: 'sonalksis-plugin-manager'
 
-  stage_only true
-
   postflight do
     ['Creative Filter', 'Digital Grimebox', 'Uber Compressor'].each do |product|
       # VST

@@ -13,8 +13,6 @@ cask 'sonalksis-essentials' do
 
   depends_on cask: 'sonalksis-plugin-manager'
 
-  stage_only true
-
   postflight do
     ['SV-315Mk2', 'SV-517Mk2', 'SV-719'].each do |product|
       # VST
