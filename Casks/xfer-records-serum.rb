@@ -7,7 +7,7 @@ cask 'xfer-records-serum' do
   sha256 '00e5deded5d656f61b016f2efe32b8fc9e3c65379aef6d3d4c09819e4ef40a40'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Xfer Records/Install_Xfer_Serum_#{version.gsub('.', '')}.dmg")
+  url URI.encode("file://#{base_dir}/Xfer Records/Install_Xfer_Serum_#{version.no_dots}.dmg")
   name 'Xfer Records Serum'
   homepage 'https://www.xferrecords.com/products/serum'
 

@@ -7,7 +7,7 @@ cask 'voxengo-span-au-aax' do
   sha256 '025163dbecae1da3c6ca5984109f3b94ee8fcbc6153242a905fa1a202d133efd'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Voxengo/VoxengoSPAN_#{version.gsub('.', '')}_Mac_AU_AAX_setup.dmg")
+  url URI.encode("file://#{base_dir}/Voxengo/VoxengoSPAN_#{version.no_dots}_Mac_AU_AAX_setup.dmg")
   name 'Voxengo SPAN (AU & AAX)'
   homepage 'http://www.voxengo.com/product/span/'
 

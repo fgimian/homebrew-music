@@ -7,7 +7,7 @@ cask 'u-he-uhbik' do
   sha256 '23bcacfc6277f82772246885a67c4a1ea7d3d5af4dbca48e422d46c7c240feda'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/u-he/Uhbik_#{version.gsub('.', '_')}_Mac.zip")
+  url URI.encode("file://#{base_dir}/u-he/Uhbik_#{version.dots_to_underscores}_Mac.zip")
   name 'u-he Uhbik'
   homepage 'https://www.u-he.com/cms/uhbik'
 

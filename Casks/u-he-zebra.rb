@@ -7,7 +7,7 @@ cask 'u-he-zebra' do
   sha256 '85c5fbf99b902e3787233d2d651d7e57ea5a9647df8206d68889666310b2ad62'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/u-he/Zebra2_#{version.gsub('.', '_')}_Mac.zip")
+  url URI.encode("file://#{base_dir}/u-he/Zebra2_#{version.dots_to_underscores}_Mac.zip")
   name 'u-he Zebra'
   homepage 'https://www.u-he.com/cms/zebra'
 

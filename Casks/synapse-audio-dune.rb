@@ -7,7 +7,7 @@ cask 'synapse-audio-dune' do
   sha256 'c10fb0b247bb4192ea5bb6e8c4e90c0316148deed2bc407845cdc16c146f903d'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Synapse Audio/dune#{version.gsub('.', '')}mac.dmg")
+  url URI.encode("file://#{base_dir}/Synapse Audio/dune#{version.no_dots}mac.dmg")
   name 'Synapse Audio DUNE'
   homepage 'http://www.synapse-audio.com/dune2.html'
 

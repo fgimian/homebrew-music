@@ -7,7 +7,7 @@ cask 'voxengo-span-vst-vst3' do
   sha256 '3b981b33475fa97dab4016aafb7abc4d892dd7788240d78ba6d23917458db421'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Voxengo/VoxengoSPAN_#{version.gsub('.', '')}_Mac_VST_VST3_setup.dmg")
+  url URI.encode("file://#{base_dir}/Voxengo/VoxengoSPAN_#{version.no_dots}_Mac_VST_VST3_setup.dmg")
   name 'Voxengo SPAN (VST & VST3)'
   homepage 'http://www.voxengo.com/product/span/'
 

@@ -7,11 +7,11 @@ cask 'spectrasonics-omnisphere' do
   sha256 '650d4228699d6934672bb838adff8e7dfe29c3b532f4a42e01e9a9b7ecf6cd4e'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Spectrasonics/Omnisphere_Software_Update_Mac_#{version.gsub('.', '_')}.zip")
+  url URI.encode("file://#{base_dir}/Spectrasonics/Omnisphere_Software_Update_Mac_#{version.dots_to_underscores}.zip")
   name 'Spectrasonics Omnisphere'
   homepage 'https://www.spectrasonics.net/products/omnisphere/'
 
-  pkg "Omnisphere_Software_Update_Mac_#{version.gsub('.', '_')}/Omnisphere Software Update.pkg"
+  pkg "Omnisphere_Software_Update_Mac_#{version.dots_to_underscores}/Omnisphere Software Update.pkg"
 
   uninstall pkgutil: 'net.spectrasonics.Omnisphere'
 

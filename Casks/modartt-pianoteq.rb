@@ -7,7 +7,7 @@ cask 'modartt-pianoteq' do
   sha256 'a7812c54aa804bd1a3cd83ed18e5a6894cead246cd2d23fda7e5528bc4a86bbb'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Modartt/pianoteq_setup_v#{version.gsub('.', '')}.dmg")
+  url URI.encode("file://#{base_dir}/Modartt/pianoteq_setup_v#{version.no_dots}.dmg")
   name 'Modartt Pianoteq'
   homepage 'https://www.pianoteq.com/pianoteq6'
 

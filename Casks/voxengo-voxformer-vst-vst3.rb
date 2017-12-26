@@ -7,7 +7,7 @@ cask 'voxengo-voxformer-vst-vst3' do
   sha256 'e846cda09079fe99e679227536a75873f754df276cf37a579de99eafc09798d7'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Voxengo/VoxengoVoxformer_#{version.gsub('.', '')}_Mac_VST_VST3_setup.dmg")
+  url URI.encode("file://#{base_dir}/Voxengo/VoxengoVoxformer_#{version.no_dots}_Mac_VST_VST3_setup.dmg")
   name 'Voxengo Voxformer (VST & VST3)'
   homepage 'http://www.voxengo.com/product/voxformer/'
 
