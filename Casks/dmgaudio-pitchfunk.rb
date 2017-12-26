@@ -9,7 +9,7 @@ cask 'dmgaudio-pitchfunk' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/PitchFunkMac_v#{version}.zip")
   name 'DMGAudio PitchFunk'
-  homepage 'https://dmgaudio.com/products_pitchfunk.php'
+  homepage 'https://dmgaudio.com/pitchfunk'
 
   pkg "PitchFunkMac_v#{version}.pkg"
 

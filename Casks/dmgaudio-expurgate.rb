@@ -9,7 +9,7 @@ cask 'dmgaudio-expurgate' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/ExpurgateMac_v#{version}.zip")
   name 'DMGAudio Expurgate'
-  homepage 'https://dmgaudio.com/products_expurgate.php'
+  homepage 'https://dmgaudio.com/expurgate'
 
   pkg "ExpurgateMac_v#{version}.pkg"
 

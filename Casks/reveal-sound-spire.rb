@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'reveal-sound-spire' do
-  version '1.1.11'
-  sha256 '057d00e8e738bab7d2503780f493c50a07972d2835b0b1d4ef3b57b4185d8165'
+  version '1.1.13'
+  sha256 '3c6dbc07f6b62f0a8106720bea2d4fb94a818481f9521abb5402da80a8c1b861'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Reveal Sound/Spire-#{version}-Mac.zip")

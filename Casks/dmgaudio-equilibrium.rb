@@ -9,7 +9,7 @@ cask 'dmgaudio-equilibrium' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/EQuilibriumMac_v#{version}.zip")
   name 'DMGAudio EQuilibrium'
-  homepage 'https://dmgaudio.com/products_equilibrium.php'
+  homepage 'https://dmgaudio.com/equilibrium'
 
   pkg "EQuilibriumMac_v#{version}.pkg"
 

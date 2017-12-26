@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'valhalladsp-valhallavintageverb' do
-  version '1.7.0'
-  sha256 '2a203b3db828ffcfd3f000922b242bae84648213eb874856158f1e0b50691e6c'
+  version '1.7.1'
+  sha256 'ed7f62fb2c3e3bc654a9f991ceb065a08f725e7fe40e673944072252ee237ffe'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/ValhallaDSP/ValhallaVintageVerbOSX_#{version.gsub('.', '_')}.zip")

@@ -9,7 +9,7 @@ cask 'dmgaudio-equick' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/EQuickMac_v#{version}.zip")
   name 'DMGAudio EQuick'
-  homepage 'https://dmgaudio.com/products_equick.php'
+  homepage 'https://dmgaudio.com/equick'
 
   pkg "EQuickMac_v#{version}.pkg"
 

@@ -9,7 +9,7 @@ cask 'dmgaudio-compassion' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/CompassionMac_v#{version}.zip")
   name 'DMGAudio Compassion'
-  homepage 'https://dmgaudio.com/products_compassion.php'
+  homepage 'https://dmgaudio.com/compassion'
 
   pkg "CompassionMac_v#{version}.pkg"
 

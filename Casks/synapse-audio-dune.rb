@@ -4,7 +4,7 @@ base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'synapse-audio-dune' do
   version '2.5.0.2'
-  sha256 '9779af225b8074b3da8999ec68375aba515b857abeb0f55d0acd0139214e91a2'
+  sha256 'c10fb0b247bb4192ea5bb6e8c4e90c0316148deed2bc407845cdc16c146f903d'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Synapse Audio/dune#{version.gsub('.', '')}mac.dmg")

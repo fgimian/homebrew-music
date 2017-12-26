@@ -4,7 +4,7 @@ base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'celemony-melodyne-editor' do
   version '2.1.2'
-  sha256 'd2a4d6fecd323378d71fa20e1e203298e8f92e96e41c96cc44cc16ab84b0a276'
+  sha256 '3bd99fc9fe2d172defc8083aa2eb70092fb7ca3db3e0de1cfaefa1773b4d294c'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Celemony/Melodyne singletrack.#{version}.fgimian.dmg")

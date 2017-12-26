@@ -9,7 +9,7 @@ cask 'dmgaudio-trackcontrol' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/TrackControlMac_v#{version}.zip")
   name 'DMGAudio TrackControl'
-  homepage 'https://dmgaudio.com/products_trackcontrol.php'
+  homepage 'https://dmgaudio.com/trackcontrol'
 
   pkg "TrackControlMac_v#{version}.pkg"
 

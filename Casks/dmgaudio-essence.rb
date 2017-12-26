@@ -9,7 +9,7 @@ cask 'dmgaudio-essence' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/EssenceMac_v#{version}.zip")
   name 'DMGAudio Essence'
-  homepage 'https://dmgaudio.com/products_essence.php'
+  homepage 'https://dmgaudio.com/essence'
 
   pkg "EssenceMac_v#{version}.pkg"
 

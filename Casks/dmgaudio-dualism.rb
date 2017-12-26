@@ -9,7 +9,7 @@ cask 'dmgaudio-dualism' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/DualismMac_v#{version}.zip")
   name 'DMGAudio Dualism'
-  homepage 'https://dmgaudio.com/products_dualism.php'
+  homepage 'https://dmgaudio.com/dualism'
 
   pkg "DualismMac_v#{version}.pkg"
 

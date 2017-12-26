@@ -9,7 +9,7 @@ cask 'dmgaudio-tracklimit' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/TrackLimitMac_v#{version}.zip")
   name 'DMGAudio TrackLimit'
-  homepage 'https://dmgaudio.com/products_TrackLimit.php'
+  homepage 'https://dmgaudio.com/tracklimit'
 
   pkg "TrackLimitMac_v#{version}.pkg"
 

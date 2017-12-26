@@ -9,7 +9,7 @@ cask 'dmgaudio-limitless' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/LimitlessMac_v#{version}.zip")
   name 'DMGAudio Limitless'
-  homepage 'https://dmgaudio.com/products_limitless.php'
+  homepage 'https://dmgaudio.com/limitless'
 
   pkg "LimitlessMac_v#{version}.pkg"
 

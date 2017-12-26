@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'ableton-live-9-suite' do
-  version '9.7.1'
-  sha256 '6570bc21368a5db953e1a1bdbf62477f393733aa15e8d58bc26a3f2ebe776af0'
+  version '9.7.5'
+  sha256 '12ad48293cd326a1d1982e2877a50cd21ee4a747d987ad68cead23081287aaea'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Ableton/ableton_live_suite_#{version}_64.dmg")

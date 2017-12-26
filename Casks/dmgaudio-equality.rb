@@ -9,7 +9,7 @@ cask 'dmgaudio-equality' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/EQualityMac_v#{version}.zip")
   name 'DMGAudio EQuality'
-  homepage 'https://dmgaudio.com/products_equality.php'
+  homepage 'https://dmgaudio.com/equality'
 
   pkg "EQualityMac_v#{version}.pkg"
 

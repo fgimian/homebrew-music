@@ -9,7 +9,7 @@ cask 'dmgaudio-trackgate' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/TrackGateMac_v#{version}.zip")
   name 'DMGAudio TrackGate'
-  homepage 'https://dmgaudio.com/products_TrackGate.php'
+  homepage 'https://dmgaudio.com/trackgate'
 
   pkg "TrackGateMac_v#{version}.pkg"
 

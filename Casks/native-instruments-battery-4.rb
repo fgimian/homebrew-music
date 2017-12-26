@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'native-instruments-battery-4' do
-  version '4.1.5'
-  sha256 '9fa6c01dec9ca8055f1e45a6be2049e7d0b36ad25c4f357a5f21eece8d757314'
+  version '4.1.6'
+  sha256 'f9add92930f71ee4bffa1c6ff208660f00909bd1b0216169141a400e7086f059'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Native Instruments/Battery_4.iso")

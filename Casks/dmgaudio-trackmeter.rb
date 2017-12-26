@@ -9,7 +9,7 @@ cask 'dmgaudio-trackmeter' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/DMGAudio/TrackMeterMac_v#{version}.zip")
   name 'DMGAudio TrackMeter'
-  homepage 'https://dmgaudio.com/products_TrackMeter.php'
+  homepage 'https://dmgaudio.com/trackmeter'
 
   pkg "TrackMeterMac_v#{version}.pkg"
 

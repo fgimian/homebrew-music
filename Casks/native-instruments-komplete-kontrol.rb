@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'native-instruments-komplete-kontrol' do
-  version '1.8.1'
-  sha256 '4a0aa442c13e0edc6a4bb40a1872e312c266f191a7977f92ea8d2a8c5727e030'
+  version '1.9.3'
+  sha256 '1e7f343e8f278d5cfe3fb63da0886d5d06dbe3494555fc53640a0707e67bdfa0'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Native Instruments/Komplete_Kontrol.iso")
