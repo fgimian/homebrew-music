@@ -13,5 +13,5 @@ cask 'steinberg-retrologue' do
 
   depends_on cask: 'steinberg-cubase-pro-9'
 
-  pkg 'Retrologue.pkg'
+  pkg 'Retrologue.pkg', allow_untrusted: true
 end
