@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'focusrite-control' do
-  version '2.1.8'
-  sha256 '11895e1c2551b6bd05328ab4021ba28020d956a451e0f3b26545c41a4e2c740b'
+  version '2.3.3'
+  sha256 'd6f5b489694cdd2f5e392317add09be382b6990f45de7cbf626d0c97ba9a177b'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Focusrite/focusrite-control-#{version}.dmg")

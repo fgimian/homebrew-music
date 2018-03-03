@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'native-instruments-phasis' do
-  version '1.0.0'
-  sha256 'db6e206c6feb17a49efd3f302c00e2dd6a1d3dbb92ff060a2c0067264172280f'
+  version '1.0.1'
+  sha256 '8975338e1697eaa275df3cc22b78d2602e520e4e73ae0345fcc729242c6b78ce'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Native Instruments/Phasis.iso")
