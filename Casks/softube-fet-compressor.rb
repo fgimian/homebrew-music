@@ -3,15 +3,15 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'softube-fet-compressor' do
-  version '2.4.48'
-  sha256 '8c424d11f440ae04b094583bc4fc1010b6b5f62793e3029665708c93fdafa407'
+  version '2.4.58-20180511-127254-1q94hcr,278857'
+  sha256 'cfddc8cadd1fc5d088c6cb78c5bf8451e1b645439342cf761666b108aa4df280'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/FET_Compressor-2.4.48-20180306-84192-1d4ih8j.zip")
+  url URI.encode("file://#{base_dir}/Softube/FET_Compressor-#{version.before_comma}.zip")
   name 'Softube FET Compressor'
   homepage 'https://www.softube.com/index.php?id=fc'
 
-  pkg 'Softube FET Compressor Installer 2.4.48 r277255.pkg'
+  pkg "Softube FET Compressor Installer #{version.major_minor_patch} r#{version.after_comma}.pkg"
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_FET_Compressor.*'
 

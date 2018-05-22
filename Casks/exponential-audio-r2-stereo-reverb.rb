@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'exponential-audio-r2-stereo-reverb' do
-  version '3.0.8'
-  sha256 'ebb59484ed5918614f105be37aecba7b0c225e2380ba67d785028ff597b7dc95'
+  version '4.0.0'
+  sha256 '7bd654f0fc341bf797bd4aa8073caacff3a517d7f11832abc139da2ecc1a3e2e'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Exponential Audio/R2_Mac_Release_#{version}.dmg.zip")

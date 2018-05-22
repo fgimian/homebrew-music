@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'goodhertz-canopener-studio' do
-  version '3.1.0-r1'
-  sha256 '5294acbf6dd79437d3808af15d097851bec5cdb77c009b673a2d9c372de10e6a'
+  version '3.2.0-r2'
+  sha256 'c2c0999bdfec34bb54a96120aa7c2806e58aa948ebd1c7377e54870d83d8c22e'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Goodhertz/Goodhertz-Installer-#{version.hyphens_to_underscores}.pkg")
