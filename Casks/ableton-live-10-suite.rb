@@ -9,7 +9,7 @@ cask 'ableton-live-10-suite' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Ableton/ableton_live_suite_#{version}_64.dmg")
   name 'Ableton Live 10 Suite'
-  homepage 'https://www.ableton.com/'
+  homepage 'https://www.ableton.com/en/live/'
 
   app 'Ableton Live 10 Suite.app'
 
