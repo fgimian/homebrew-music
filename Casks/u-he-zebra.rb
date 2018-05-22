@@ -9,7 +9,7 @@ cask 'u-he-zebra' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/u-he/Zebra2_#{version.major_minor.no_dots}_#{version.after_comma}_Mac.zip")
   name 'u-he Zebra'
-  homepage 'https://www.u-he.com/cms/zebra'
+  homepage 'https://u-he.com/products/zebra2/'
 
   pkg "Zebra2_#{version.after_comma}_Mac/Zebra2 #{version.before_comma} Installer.pkg"
 

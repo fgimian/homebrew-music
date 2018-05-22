@@ -3,15 +3,15 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'u-he-uhbik' do
-  version '1.3.1'
+  version '1.3.1,3898'
   sha256 '23bcacfc6277f82772246885a67c4a1ea7d3d5af4dbca48e422d46c7c240feda'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/u-he/Uhbik_#{version.dots_to_underscores}_Mac.zip")
+  url URI.encode("file://#{base_dir}/u-he/Uhbik_#{version.before_comma.dots_to_underscores}_Mac.zip")
   name 'u-he Uhbik'
-  homepage 'https://www.u-he.com/cms/uhbik'
+  homepage 'https://u-he.com/products/uhbik/'
 
-  pkg 'Uhbik3898Mac/Uhbik 1.3.1.3898 Installer.pkg'
+  pkg "Uhbik#{version.after_comma}Mac/Uhbik #{version.before_comma}.#{version.after_comma} Installer.pkg"
 
   uninstall pkgutil: 'com.u-he.Uhbik.*'
 
