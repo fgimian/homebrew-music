@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'native-instruments-kontakt-5' do
-  version '5.7.3'
-  sha256 '5ad77f6b621afda21c8c651259ffe29cf817371a5b9808357fb5d3f9148cad27'
+  version '5.8.0'
+  sha256 'f638b55b02ec1e49060b287e6f97f85a468204811d4c2d19436e8f1c90564950'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Native Instruments/Kontakt_5.iso")
