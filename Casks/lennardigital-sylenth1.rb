@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'lennardigital-sylenth1' do
-  version '3.0.3.2'
-  sha256 '4de93d088b910c52683a764bb1a64ef8c417d13e172c4b5fa3a1a538110ad41b'
+  version '3.0.4.1'
+  sha256 'a56a83958fdf560e939646da5c65a4a7bfc1f0ba74bf522ac5a0c9723332f507'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/LennarDigital/Sylenth1Mac.dmg")

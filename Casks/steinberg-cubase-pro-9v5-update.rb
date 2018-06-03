@@ -3,8 +3,8 @@ require 'open-uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
 
 cask 'steinberg-cubase-pro-9v5-update' do
-  version '9.5.21'
-  sha256 '58ad001e190d3acd368a451f6d7e6788ca79042cf34ba0a34807a61b835415a5'
+  version '9.5.30'
+  sha256 'c8f7c9e09f67c66e4acbc325d0d6bf17a76ffa5fc99ad6526b1232ca39de0aba'
 
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Steinberg/Cubase_#{version}_Update_mac.dmg")
