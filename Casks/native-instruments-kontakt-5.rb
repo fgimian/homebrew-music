@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-kontakt-5' do
@@ -5,7 +7,7 @@ cask 'native-instruments-kontakt-5' do
   sha256 'f638b55b02ec1e49060b287e6f97f85a468204811d4c2d19436e8f1c90564950'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Kontakt_5.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Kontakt_5.iso")
   name 'Kontakt 5'
   homepage 'https://www.native-instruments.com/en/products/komplete/samplers/kontakt-5/'
 

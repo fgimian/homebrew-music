@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'modartt-pianoteq' do
@@ -5,7 +7,7 @@ cask 'modartt-pianoteq' do
   sha256 'c3f9607d9399e6ee2cbcb427287b318cb96969dd07e69875ed5d8411f81449f2'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Modartt/pianoteq_setup_v#{version.no_dots}.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/Modartt/pianoteq_setup_v#{version.no_dots}.dmg")
   name 'Modartt Pianoteq'
   homepage 'https://www.pianoteq.com/pianoteq6'
 

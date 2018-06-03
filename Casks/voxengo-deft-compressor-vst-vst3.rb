@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'voxengo-deft-compressor-vst-vst3' do
@@ -5,7 +7,7 @@ cask 'voxengo-deft-compressor-vst-vst3' do
   sha256 'f63de9393d0418897b578447a2af63377967f4501329206239fa2f541c89612a'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Voxengo/VoxengoDeftCompressor_#{version.no_dots}_Mac_VST_VST3_setup.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/Voxengo/VoxengoDeftCompressor_#{version.no_dots}_Mac_VST_VST3_setup.dmg")
   name 'Voxengo Deft Compressor (VST & VST3)'
   homepage 'http://www.voxengo.com/product/deftcompressor/'
 

@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'artsacoustic-reverb' do
@@ -5,7 +7,7 @@ cask 'artsacoustic-reverb' do
   sha256 '9cf6073196c890c7ba76c16548bdaa07a5d4a42955ad5493bf8097fca65cb505'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/ArtsAcoustic/ArtsAcousticReverb.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/ArtsAcoustic/ArtsAcousticReverb.dmg")
   name 'ArtsAcoustic Reverb'
   homepage 'http://www.artsacoustic.com/artsacoustic_reverb.php'
 

@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-guitar-rig-5' do
@@ -5,7 +7,7 @@ cask 'native-instruments-guitar-rig-5' do
   sha256 'b84c702a9439faf0eb9c2b74bc2d5267f185eeecd716f0300fcd2279c70b2d65'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Guitar_Rig_5.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Guitar_Rig_5.iso")
   name 'Guitar Rig 5'
   homepage 'https://www.native-instruments.com/en/products/komplete/guitar/guitar-rig-5-pro/'
 

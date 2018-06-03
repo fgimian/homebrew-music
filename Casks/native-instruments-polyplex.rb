@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-polyplex' do
@@ -5,7 +7,7 @@ cask 'native-instruments-polyplex' do
   sha256 '20aacb496b65b2ae41b8ffa1f1f5b73f4b88a847592fec9d7ac27128d24bafa3'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Polyplex.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Polyplex.iso")
   name 'Polyplex'
   homepage 'https://www.native-instruments.com/en/products/komplete/drums/polyplex/'
 

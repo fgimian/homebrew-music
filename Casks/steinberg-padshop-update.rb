@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'steinberg-padshop-update' do
@@ -5,7 +7,7 @@ cask 'steinberg-padshop-update' do
   sha256 '56e89d4cc2ae1932bde71614d844564a2f1061d767801365cd1cdbcee1c7a34d'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Steinberg/vsti_au_patcher_mac.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/Steinberg/vsti_au_patcher_mac.dmg")
   name 'Steinberg Padshop (Update)'
   homepage 'https://www.steinberg.net/en/products/vst/padshop/padshop.html'
 

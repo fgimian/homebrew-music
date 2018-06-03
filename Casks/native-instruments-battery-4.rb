@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-battery-4' do
@@ -5,7 +7,7 @@ cask 'native-instruments-battery-4' do
   sha256 'f9add92930f71ee4bffa1c6ff208660f00909bd1b0216169141a400e7086f059'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Battery_4.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Battery_4.iso")
   name 'Battery 4'
   homepage 'https://www.native-instruments.com/en/products/komplete/drums/battery-4/'
 

@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'reveal-sound-spire' do
@@ -5,7 +7,7 @@ cask 'reveal-sound-spire' do
   sha256 '516b06662da85dd2a7dde9e0052fb569895cd84fce059f7cb93f6822063ce40e'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Reveal Sound/Spire-#{version}-Mac.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Reveal Sound/Spire-#{version}-Mac.zip")
   name 'Reveal Sound Spire'
   homepage 'http://www.reveal-sound.com/'
 

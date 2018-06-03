@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-kontour' do
@@ -5,7 +7,7 @@ cask 'native-instruments-kontour' do
   sha256 '32075783b04549d15cfedad2bd8efca7d0cc313065712ef7b2213bac4cf8db33'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Kontour.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Kontour.iso")
   name 'Kontour'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/kontour/'
 

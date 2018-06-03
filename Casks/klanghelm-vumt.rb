@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'klanghelm-vumt' do
@@ -5,7 +7,7 @@ cask 'klanghelm-vumt' do
   sha256 'dc321d394b3c6318794a5e2924a816b4dd6d68d6920bbf2b6d1137b9f470300c'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Klanghelm/VUMT-mac-installer.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Klanghelm/VUMT-mac-installer.zip")
   name 'Klanghelm VUMT'
   homepage 'http://klanghelm.com/contents/products/VUMT/VUMT.php'
 

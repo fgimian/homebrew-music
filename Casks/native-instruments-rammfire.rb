@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-rammfire' do
@@ -5,7 +7,7 @@ cask 'native-instruments-rammfire' do
   sha256 '6454108134e003c1abcbb691acd27cc8ba6825305c8fe0888e9876e0a3e6bc9f'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Rammfire.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Rammfire.iso")
   name 'Rammfire'
   homepage 'https://www.native-instruments.com/en/products/komplete/guitar/rammfire/'
 

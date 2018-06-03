@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-traktors-12' do
@@ -5,7 +7,7 @@ cask 'native-instruments-traktors-12' do
   sha256 '0edf35d667bafbf69a78a81afe388c5c5216f8be1eabd1640ba53d4b9aa5257f'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Traktors_12.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Traktors_12.iso")
   name 'Traktors 12'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/traktors-12/'
 

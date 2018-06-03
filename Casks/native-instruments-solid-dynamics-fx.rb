@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-solid-dynamics-fx' do
@@ -5,7 +7,7 @@ cask 'native-instruments-solid-dynamics-fx' do
   sha256 'ab96b3971a0197e81dccb30934f8951cf1d1aea3c08a8ee0c87f2046633f330f'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Solid_Dynamics_FX.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Solid_Dynamics_FX.iso")
   name 'Solid Dynamics FX'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/solid-dynamics/'
 

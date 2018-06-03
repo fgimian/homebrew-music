@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-vc-160-fx' do
@@ -5,7 +7,7 @@ cask 'native-instruments-vc-160-fx' do
   sha256 '763b4f1965b1dc276f717f5baab87da53fe5b3c2eeb62c72f4ad082fff4bf735'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/VC_160_FX.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/VC_160_FX.iso")
   name 'VC 160 FX'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/vc-160/'
 

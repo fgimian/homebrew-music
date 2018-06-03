@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-the-finger-r2' do
@@ -5,7 +7,7 @@ cask 'native-instruments-the-finger-r2' do
   sha256 'db537a40ecc5357326382126d694da10536824839af35a715924e082aec74d71'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/The_Finger_R2.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/The_Finger_R2.iso")
   name 'The Finger R2'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/the-finger/'
 

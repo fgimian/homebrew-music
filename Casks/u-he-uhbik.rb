@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'u-he-uhbik' do
@@ -5,7 +7,7 @@ cask 'u-he-uhbik' do
   sha256 '23bcacfc6277f82772246885a67c4a1ea7d3d5af4dbca48e422d46c7c240feda'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/u-he/Uhbik_#{version.before_comma.dots_to_underscores}_Mac.zip")
+  url Addressable::URI.encode("file://#{base_dir}/u-he/Uhbik_#{version.before_comma.dots_to_underscores}_Mac.zip")
   name 'u-he Uhbik'
   homepage 'https://u-he.com/products/uhbik/'
 

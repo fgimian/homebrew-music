@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-monark' do
@@ -5,7 +7,7 @@ cask 'native-instruments-monark' do
   sha256 '9c069714011b0a2090dc8153d528e35a29ccbab1d9a588964a7251d0eae46569'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Monark.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Monark.iso")
   name 'Monark'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/monark/'
 

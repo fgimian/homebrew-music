@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'eventide-2016-stereo-room' do
@@ -5,7 +7,7 @@ cask 'eventide-2016-stereo-room' do
   sha256 '9a65e19a9ecd7f991281d4e5140f75476a47bed7a661793a863ba99d6c26d838'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Eventide/2016-Stereo-Room-#{version}-osx-installer.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/Eventide/2016-Stereo-Room-#{version}-osx-installer.dmg")
   name 'Eventide 2016 Stereo Room'
   homepage 'https://www.eventideaudio.com/products/plugins/reverb/2016-stereo-room'
 

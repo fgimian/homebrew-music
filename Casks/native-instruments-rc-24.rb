@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-rc-24' do
@@ -5,7 +7,7 @@ cask 'native-instruments-rc-24' do
   sha256 '105820b24285de3ac3545f467cac90b8bff35a12a7acdbc1861cdaa8872157f1'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/RC_24.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/RC_24.iso")
   name 'RC 24'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/rc-24/'
 

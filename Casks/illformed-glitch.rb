@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'illformed-glitch' do
@@ -5,7 +7,7 @@ cask 'illformed-glitch' do
   sha256 '595417c5babe8d9abff33148a58010eff298e40fead2bd7504c8679bd199644b'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Illformed/Glitch_#{version.dots_to_underscores}_Mac_Registered.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Illformed/Glitch_#{version.dots_to_underscores}_Mac_Registered.zip")
   name 'Illformed Glitch'
   homepage 'https://illformed.com/glitch/'
 

@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'cytomic-the-drop' do
@@ -5,7 +7,7 @@ cask 'cytomic-the-drop' do
   sha256 '73a542f04cf2f0e5173472b91fbdc6360d2fa3bff02856f08a8adff6a8d44a3f'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Cytomic/TheDrop_v#{version}_Mac.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/Cytomic/TheDrop_v#{version}_Mac.dmg")
   name 'The Drop'
   homepage 'https://cytomic.com/#plugins'
 

@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-the-mouth' do
@@ -5,7 +7,7 @@ cask 'native-instruments-the-mouth' do
   sha256 '634e42311c163b52cf577660ba7f5b8a5315fb90bc033307210e837756fe2893'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/The_Mouth.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/The_Mouth.iso")
   name 'The Mouth'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/the-mouth/'
 

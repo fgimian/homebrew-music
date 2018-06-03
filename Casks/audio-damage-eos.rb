@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'audio-damage-eos' do
@@ -5,7 +7,7 @@ cask 'audio-damage-eos' do
   sha256 'f187856d559c5eb37cd6001d884fb4e4f353a3f27c858fc8405ba5cd33f3de08'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Audio Damage/AD034_Eos_#{version.no_dots}.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Audio Damage/AD034_Eos_#{version.no_dots}.zip")
   name 'Audio Damage Eos'
   homepage 'https://www.audiodamage.com/products/ad034-eos-2'
 

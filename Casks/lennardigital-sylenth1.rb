@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'lennardigital-sylenth1' do
@@ -5,7 +7,7 @@ cask 'lennardigital-sylenth1' do
   sha256 'a56a83958fdf560e939646da5c65a4a7bfc1f0ba74bf522ac5a0c9723332f507'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/LennarDigital/Sylenth1Mac.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/LennarDigital/Sylenth1Mac.dmg")
   name 'LennarDigital Sylenth1'
   homepage 'https://www.lennardigital.com/sylenth1/'
 

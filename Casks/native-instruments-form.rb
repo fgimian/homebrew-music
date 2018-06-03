@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-form' do
@@ -5,7 +7,7 @@ cask 'native-instruments-form' do
   sha256 'd8e179c6c2e4805ccbc1827a8350e53e3c406fccd0a1519180009ed05a0704e5'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Form.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Form.iso")
   name 'Form'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/form/'
 

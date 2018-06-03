@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'steinberg-retrologue' do
@@ -5,7 +7,7 @@ cask 'steinberg-retrologue' do
   sha256 '0727daac2184c79635703a2e4a30987aac1e72140a157fd5cb60ca14c340282b'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Steinberg/Retrologue_#{version}_Installer_mac.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/Steinberg/Retrologue_#{version}_Installer_mac.dmg")
   name 'Steinberg Retrologue'
   homepage 'https://www.steinberg.net/en/products/vst/retrologue'
 

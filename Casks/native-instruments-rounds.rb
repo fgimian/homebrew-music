@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-rounds' do
@@ -5,7 +7,7 @@ cask 'native-instruments-rounds' do
   sha256 '76b7e3356a31e24284761e91afacdf6815ac8541c45f8f719d70c65daa08fb10'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Rounds.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Rounds.iso")
   name 'Rounds'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/rounds/'
 

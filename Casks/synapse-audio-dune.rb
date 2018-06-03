@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'synapse-audio-dune' do
@@ -5,7 +7,7 @@ cask 'synapse-audio-dune' do
   sha256 '1a3ba4aba089129840104d6ffef09e4a879b66d16886bed86c869bdf1ea65c91'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Synapse Audio/dune#{version.no_dots}mac.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/Synapse Audio/dune#{version.no_dots}mac.dmg")
   name 'Synapse Audio DUNE'
   homepage 'http://www.synapse-audio.com/dune2.html'
 

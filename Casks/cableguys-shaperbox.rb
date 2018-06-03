@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'cableguys-shaperbox' do
@@ -5,7 +7,7 @@ cask 'cableguys-shaperbox' do
   sha256 'c1fa2d35a95a221c00a24c22551b3592c5513acf01c4b0e11d528c3265aae849'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Cableguys/Cableguys-ShaperBox.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Cableguys/Cableguys-ShaperBox.zip")
   name 'Cableguys ShaperBox'
   homepage 'http://www.cableguys.com/'
 

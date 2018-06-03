@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'goodhertz-canopener-studio' do
@@ -5,7 +7,7 @@ cask 'goodhertz-canopener-studio' do
   sha256 'c2c0999bdfec34bb54a96120aa7c2806e58aa948ebd1c7377e54870d83d8c22e'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Goodhertz/Goodhertz-Installer-#{version.hyphens_to_underscores}.pkg")
+  url Addressable::URI.encode("file://#{base_dir}/Goodhertz/Goodhertz-Installer-#{version.hyphens_to_underscores}.pkg")
   name 'Goodhertz CanOpener Studio'
   homepage 'https://goodhertz.co/canopener-studio'
 

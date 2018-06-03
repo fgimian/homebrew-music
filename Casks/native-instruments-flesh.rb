@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-flesh' do
@@ -5,7 +7,7 @@ cask 'native-instruments-flesh' do
   sha256 '51a86d8f6e0896feffde3b6db4ffa5e0e4aa2c29f78639345ac6788c2876f72e'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Flesh.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Flesh.iso")
   name 'Flesh'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/flesh/'
 

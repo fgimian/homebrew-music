@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-reaktor-blocks' do
@@ -5,7 +7,7 @@ cask 'native-instruments-reaktor-blocks' do
   sha256 'd3edac9c02b6993d118ff109cfc9f2a900d15a71ead318f345d3ada57e75bce0'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Reaktor_Blocks.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Reaktor_Blocks.iso")
   name 'Reaktor Blocks'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/reaktor-6/'
 

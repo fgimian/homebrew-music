@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'dmgaudio-limitless' do
@@ -5,7 +7,7 @@ cask 'dmgaudio-limitless' do
   sha256 '6c697346ccfcbcb9236cf9dbd79b35ca29080d0946eade51b4bf0438bb6c7160'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/DMGAudio/LimitlessMac_v#{version}.zip")
+  url Addressable::URI.encode("file://#{base_dir}/DMGAudio/LimitlessMac_v#{version}.zip")
   name 'DMGAudio Limitless'
   homepage 'https://dmgaudio.com/limitless'
 

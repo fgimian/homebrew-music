@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-reaktor-prism' do
@@ -5,7 +7,7 @@ cask 'native-instruments-reaktor-prism' do
   sha256 '3f7068e918d972ff969e412f7eda277aae1eaf2e457bcb5223eb22c586d065e1'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Reaktor_Prism.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Reaktor_Prism.iso")
   name 'Reaktor Prism'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/reaktor-prism/'
 

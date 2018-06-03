@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-razor' do
@@ -5,7 +7,7 @@ cask 'native-instruments-razor' do
   sha256 '0cb7ead8265ef28e3abd84f1032ac260f9d785adf59c49ff4754acb7776a05d9'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Razor.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Razor.iso")
   name 'Razor'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/razor/'
 

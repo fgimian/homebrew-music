@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'softube-tube-delay' do
@@ -5,7 +7,7 @@ cask 'softube-tube-delay' do
   sha256 'bca31a9b53d7039d09072da33bef65c2981d4b7785b521a13bd407d69e521112'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/Tube_Delay-#{version.before_comma}.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Softube/Tube_Delay-#{version.before_comma}.zip")
   name 'Softube Tube Delay'
   homepage 'https://www.softube.com/index.php?id=td'
 

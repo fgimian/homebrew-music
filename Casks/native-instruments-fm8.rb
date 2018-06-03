@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-fm8' do
@@ -5,7 +7,7 @@ cask 'native-instruments-fm8' do
   sha256 '9bdc3bba456893bc7a50567f6e65d58732c04fc03ccef2ecf82252649b973c1a'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/FM8.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/FM8.iso")
   name 'FM8'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/fm8/'
 

@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-transient-master-fx' do
@@ -5,7 +7,7 @@ cask 'native-instruments-transient-master-fx' do
   sha256 '81212e23d61a654e9a1844e508c3a71d8970f1ea5e9d925e5a3941a271659e29'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Transient_Master_FX.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Transient_Master_FX.iso")
   name 'Transient Master FX'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/transient-master/'
 

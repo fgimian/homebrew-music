@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-phasis' do
@@ -5,7 +7,7 @@ cask 'native-instruments-phasis' do
   sha256 '8975338e1697eaa275df3cc22b78d2602e520e4e73ae0345fcc729242c6b78ce'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Phasis.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Phasis.iso")
   name 'Phasis'
   homepage 'https://www.native-instruments.com/en/specials/happy-holidays-2017/download-phasis/'
 

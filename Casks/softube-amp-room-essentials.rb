@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'softube-amp-room-essentials' do
@@ -5,7 +7,7 @@ cask 'softube-amp-room-essentials' do
   sha256 'e0c9ca8a754f8d457feebfb0664b84c6874643482dc7bbb443aa9b5808820311'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/Amp_Room_Essentials-#{version.before_comma}.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Softube/Amp_Room_Essentials-#{version.before_comma}.zip")
   name 'Softube Amp Room Essentials'
   homepage 'https://www.softube.com/index.php?id=arb'
 

@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-skanner-xt' do
@@ -5,7 +7,7 @@ cask 'native-instruments-skanner-xt' do
   sha256 'c30014e70f13f47bb9e5ef15a2038b5cd51a980e387470f3ac5defd866794847'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Native Instruments/Skanner_XT.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Skanner_XT.iso")
   name 'Skanner XT'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/skanner-xt/'
 

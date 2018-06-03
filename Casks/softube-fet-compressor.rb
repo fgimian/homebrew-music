@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'softube-fet-compressor' do
@@ -5,7 +7,7 @@ cask 'softube-fet-compressor' do
   sha256 'cfddc8cadd1fc5d088c6cb78c5bf8451e1b645439342cf761666b108aa4df280'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Softube/FET_Compressor-#{version.before_comma}.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Softube/FET_Compressor-#{version.before_comma}.zip")
   name 'Softube FET Compressor'
   homepage 'https://www.softube.com/index.php?id=fc'
 

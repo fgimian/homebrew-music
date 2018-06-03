@@ -1,3 +1,5 @@
+require 'addressable/uri'
+
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'steinberg-cubase-pro-9v5' do
@@ -5,7 +7,7 @@ cask 'steinberg-cubase-pro-9v5' do
   sha256 'b7a6fe2cb0ba266bb0827977298046ec8f1bf64017299c310ddaa7bf96496e4c'
 
   # :base_dir was verified as official when first introduced to the cask
-  url URI.encode("file://#{base_dir}/Steinberg/Cubase_9.5_Installer_mac.dmg")
+  url Addressable::URI.encode("file://#{base_dir}/Steinberg/Cubase_9.5_Installer_mac.dmg")
   name 'Steinberg Cubase Pro 9.5'
   homepage 'https://www.steinberg.net/en/products/cubase'
 
