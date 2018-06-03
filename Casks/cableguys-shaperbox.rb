@@ -7,7 +7,7 @@ cask 'cableguys-shaperbox' do
   # :base_dir was verified as official when first introduced to the cask
   url URI.encode("file://#{base_dir}/Cableguys/Cableguys-ShaperBox.zip")
   name 'Cableguys ShaperBox'
-  homepage 'http://www.cableguys.com'
+  homepage 'http://www.cableguys.com/'
 
   pkg "Cableguys - ShaperBox #{version}/Mac/Cableguys - ShaperBox #{version}.pkg"
 
