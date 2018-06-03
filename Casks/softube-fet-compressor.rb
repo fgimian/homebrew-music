@@ -1,6 +1,4 @@
-require 'open-uri'
-
-base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'softube-fet-compressor' do
   version '2.4.58-20180511-127254-1q94hcr,278857'

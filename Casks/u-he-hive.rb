@@ -1,6 +1,4 @@
-require 'open-uri'
-
-base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'u-he-hive' do
   version '1.1.0,3898'

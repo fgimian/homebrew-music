@@ -1,6 +1,4 @@
-require 'open-uri'
-
-base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', '')
+base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'steinberg-cubase-pro-9v5' do
   version '9.5.0'
