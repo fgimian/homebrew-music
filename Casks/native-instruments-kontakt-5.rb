@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-kontakt-5' do
-  version '5.8.0'
-  sha256 'f638b55b02ec1e49060b287e6f97f85a468204811d4c2d19436e8f1c90564950'
+  version '5.8.1'
+  sha256 '26d62a17c1a4475674fa660a44c41821bd0b4147e57e5e1f48a1e1b32ac4b53a'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Kontakt_5.iso")
