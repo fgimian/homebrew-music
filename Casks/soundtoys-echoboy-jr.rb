@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'soundtoys-echoboy-jr' do
-  version '5.2.0.12502'
-  sha256 'f73da1341b3babf5a744b6de5ab007628453f1e6280c740cfe2f4667cbad732f'
+  version '5.2.4.13665'
+  sha256 'a68de0e2c34984df40428133a17032c70690d5fc2d996d718aa66aed85ebd23d'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Soundtoys/EchoBoyJr5_#{version}.dmg")

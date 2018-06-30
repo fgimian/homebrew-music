@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'dmgaudio-expurgate' do
-  version '1.02'
-  sha256 '65d9692a853f2098ee74dd307d316293f22c6bde07678cc62b72e4c08051b41b'
+  version '1.03'
+  sha256 '4f79adcc7ad2f467c9ea540b80ab2c332f330ddede759612bf9c13a533b27ea1'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/DMGAudio/ExpurgateMac_v#{version}.zip")

@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'dmgaudio-tracklimit' do
-  version '1.00'
-  sha256 'd4899462e868bd34536ae370a4c65f66b5ef2470c7b354f0434a6ea887984572'
+  version '1.01'
+  sha256 '60cad0fe2d52b99e1faf2339af16505e7d20d6a8aa9dcdf992ed783ecaf4ccaf'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/DMGAudio/TrackLimitMac_v#{version}.zip")

@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'softube-fix-flanger-and-doubler' do
-  version '2.4.58-20180511-127254-1h6w9hv,278857'
-  sha256 '97d0c3c0da2abf7b10a76c009fdc29eb9b2a7521b3256ded7e61ebbd3e1bc00c'
+  version '2.4.63-20180620-19846-gtgoxp,279860'
+  sha256 '7a2b7d67e0027caf5ff0d95444612617a2a28095a4bae0572d231106fe1dd6f6'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Softube/Fix_Flanger_and_Doubler-#{version.before_comma}.zip")
