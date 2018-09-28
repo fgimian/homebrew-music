@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-massive' do
-  version '1.5.1'
-  sha256 'dd1ef0c545f66a2ab4b70eb3f9fd0d713ea08ba643facdd33954d6053ae12bd8'
+  version '1.5.5'
+  sha256 '6620408734b837145c35671d9acae473a6a9aa55c87aaed59b4d63d79c5a6d9e'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Massive.iso")

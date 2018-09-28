@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'goodhertz-canopener-studio' do
-  version '3.2.0-r2'
-  sha256 'c2c0999bdfec34bb54a96120aa7c2806e58aa948ebd1c7377e54870d83d8c22e'
+  version '3.3.1-r2'
+  sha256 'd58dc0f118b22b86fccd5919e932885068e5091e555dd3aa8268efecf9f009e7'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Goodhertz/Goodhertz-Installer-#{version.hyphens_to_underscores}.pkg")

@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'spectrasonics-omnisphere' do
-  version '2.4.2c'
-  sha256 '14bf2643e61a1890547ae721221fc5458bff3da9161f7a213c5d926380a40404'
+  version '2.5.0d'
+  sha256 'e6585f6e3774de49a3f6a1eb11bce2064a5dcc7743dfa81d8a276dd8f890d546'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Spectrasonics/Omnisphere_Software_Update_Mac_#{version.dots_to_underscores}.zip")
