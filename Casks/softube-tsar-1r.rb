@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'softube-tsar-1r' do
-  version '2.4.62-20180615-130763-1drkg7m,279713'
-  sha256 'a32e87f5c49357951e26e7e71c014aa4dab4a4fff3928460cd86b6bf3b2a7844'
+  version '2.4.70-20180925-30283-1c03a18,280941'
+  sha256 '5f41b3e2de73bb44aaf36d28fde0dac216d69bc066d134ba44350aedd28e2200'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Softube/TSAR-1R-#{version.before_comma}.zip")

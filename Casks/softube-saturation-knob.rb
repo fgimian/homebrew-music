@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'softube-saturation-knob' do
-  version '2.4.64-20180620-19846-1d5hvpm,279887'
-  sha256 '97e3ca880f0a88e6bfa79a71cff36891928410f4310fd319fc246ec85abd547f'
+  version '2.4.70-20180925-30283-15ma933,280941'
+  sha256 '463aff9c9e370d47926bb43a2dcfc7180d54d946e4298edc1cf47cdacb92187a'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Softube/Saturation_Knob-#{version.before_comma}.zip")
