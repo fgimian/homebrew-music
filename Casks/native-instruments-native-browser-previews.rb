@@ -4,7 +4,7 @@ base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-native-browser-previews' do
   version '1.1.0'
-  sha256 '1e7f343e8f278d5cfe3fb63da0886d5d06dbe3494555fc53640a0707e67bdfa0'
+  sha256 '50bf4805496ea4e080e599aeccac4f8e85ed609ad9960d9af87bbe553d549d40'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Native_Browser_Preview_Library.iso")
