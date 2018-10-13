@@ -8,7 +8,7 @@ cask 'cytomic-the-drop' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Cytomic/TheDrop_v#{version}_Mac.dmg")
-  name 'The Drop'
+  name 'Cytomic The Drop'
   homepage 'https://cytomic.com/#plugins'
 
   pkg 'Install The Drop.pkg'

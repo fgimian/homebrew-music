@@ -8,7 +8,7 @@ cask 'cytomic-the-glue' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Cytomic/TheGlue_v#{version}_Mac.dmg")
-  name 'The Glue'
+  name 'Cytomic The Glue'
   homepage 'https://cytomic.com/index.php?q=glue'
 
   pkg 'Install The Glue.pkg'
