@@ -8,7 +8,7 @@ cask 'native-instruments-vc-160-fx' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/VC_160_FX.iso")
-  name 'VC 160 FX'
+  name 'Native Instruments VC 160 FX'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/vc-160/'
 
   pkg "VC 160 FX #{version} Installer Mac.pkg"

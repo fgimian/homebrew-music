@@ -8,7 +8,7 @@ cask 'native-instruments-guitar-rig-5' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Guitar_Rig_5.iso")
-  name 'Guitar Rig 5'
+  name 'Native Instruments Guitar Rig 5'
   homepage 'https://www.native-instruments.com/en/products/komplete/guitar/guitar-rig-5-pro/'
 
   pkg "Guitar Rig 5 #{version} Installer Mac.pkg"

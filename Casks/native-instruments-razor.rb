@@ -8,7 +8,7 @@ cask 'native-instruments-razor' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Razor.iso")
-  name 'Razor'
+  name 'Native Instruments Razor'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/razor/'
 
   pkg "Razor #{version} Installer Mac.pkg",

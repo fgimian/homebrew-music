@@ -8,7 +8,7 @@ cask 'native-instruments-molekular' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Molekular.iso")
-  name 'Molekular'
+  name 'Native Instruments Molekular'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/molekular/'
 
   pkg "Molekular #{version} Installer Mac.pkg",

@@ -8,7 +8,7 @@ cask 'native-instruments-driver' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Driver.iso")
-  name 'Driver'
+  name 'Native Instruments Driver'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/driver/'
 
   pkg "Driver #{version} Installer Mac.pkg"

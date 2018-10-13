@@ -8,7 +8,7 @@ cask 'native-instruments-passive-eq' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Passive_EQ.iso")
-  name 'Passive EQ'
+  name 'Native Instruments Passive EQ'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/passive-eq/'
 
   pkg "Passive EQ #{version} Installer Mac.pkg"

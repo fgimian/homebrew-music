@@ -8,7 +8,7 @@ cask 'native-instruments-monark' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Monark.iso")
-  name 'Monark'
+  name 'Native Instruments Monark'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/monark/'
 
   pkg "Monark #{version} Installer Mac.pkg",

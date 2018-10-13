@@ -8,7 +8,7 @@ cask 'native-instruments-kontour' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Kontour.iso")
-  name 'Kontour'
+  name 'Native Instruments Kontour'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/kontour/'
 
   pkg "Kontour #{version} Installer Mac.pkg",

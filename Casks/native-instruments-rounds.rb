@@ -8,7 +8,7 @@ cask 'native-instruments-rounds' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Rounds.iso")
-  name 'Rounds'
+  name 'Native Instruments Rounds'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/rounds/'
 
   pkg "Rounds #{version} Installer Mac.pkg",

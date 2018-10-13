@@ -8,7 +8,7 @@ cask 'native-instruments-solid-eq-fx' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Solid_EQ_FX.iso")
-  name 'Solid EQ FX'
+  name 'Native Instruments Solid EQ FX'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/solid-eq/'
 
   pkg "Solid EQ FX #{version} Installer Mac.pkg"

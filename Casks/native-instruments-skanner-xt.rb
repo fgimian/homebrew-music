@@ -8,7 +8,7 @@ cask 'native-instruments-skanner-xt' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Skanner_XT.iso")
-  name 'Skanner XT'
+  name 'Native Instruments Skanner XT'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/skanner-xt/'
 
   pkg "Skanner XT #{version} Installer Mac.pkg",

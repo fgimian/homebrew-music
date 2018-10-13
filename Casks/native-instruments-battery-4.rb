@@ -8,7 +8,7 @@ cask 'native-instruments-battery-4' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Battery_4.iso")
-  name 'Battery 4'
+  name 'Native Instruments Battery 4'
   homepage 'https://www.native-instruments.com/en/products/komplete/drums/battery-4/'
 
   pkg "Battery 4 #{version} Installer Mac.pkg"

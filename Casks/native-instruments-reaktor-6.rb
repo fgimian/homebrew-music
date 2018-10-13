@@ -8,7 +8,7 @@ cask 'native-instruments-reaktor-6' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Reaktor_6.iso")
-  name 'Reaktor 6'
+  name 'Native Instruments Reaktor 6'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/reaktor-6/'
 
   pkg "Reaktor 6 #{version} Installer Mac.pkg"

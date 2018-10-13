@@ -8,7 +8,7 @@ cask 'native-instruments-enhanced-eq' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Enhanced_EQ.iso")
-  name 'Enhanced EQ'
+  name 'Native Instruments Enhanced EQ'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/enhanced-eq/'
 
   pkg "Enhanced EQ #{version} Installer Mac.pkg"

@@ -8,7 +8,7 @@ cask 'native-instruments-supercharger-gt' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Supercharger_GT.iso")
-  name 'Supercharger GT'
+  name 'Native Instruments Supercharger GT'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/supercharger-gt/'
 
   pkg "Supercharger GT #{version} Installer Mac.pkg"

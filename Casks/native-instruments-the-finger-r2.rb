@@ -8,7 +8,7 @@ cask 'native-instruments-the-finger-r2' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/The_Finger_R2.iso")
-  name 'The Finger R2'
+  name 'Native Instruments The Finger R2'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/the-finger/'
 
   pkg "The Finger R2 #{version} Installer Mac.pkg",

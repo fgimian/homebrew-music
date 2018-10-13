@@ -8,7 +8,7 @@ cask 'native-instruments-absynth-5' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Absynth_5.iso")
-  name 'Absynth 5'
+  name 'Native Instruments Absynth 5'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/absynth-5/'
 
   pkg "Absynth 5 #{version} Installer Mac.pkg"

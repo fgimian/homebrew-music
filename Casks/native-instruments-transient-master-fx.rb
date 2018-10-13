@@ -8,7 +8,7 @@ cask 'native-instruments-transient-master-fx' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Transient_Master_FX.iso")
-  name 'Transient Master FX'
+  name 'Native Instruments Transient Master FX'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/transient-master/'
 
   pkg "Transient Master FX #{version} Installer Mac.pkg"

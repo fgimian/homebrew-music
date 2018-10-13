@@ -8,7 +8,7 @@ cask 'native-instruments-vari-comp' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Vari_Comp.iso")
-  name 'Vari Comp'
+  name 'Native Instruments Vari Comp'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/vari-comp/'
 
   pkg "Vari Comp #{version} Installer Mac.pkg"

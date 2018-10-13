@@ -8,7 +8,7 @@ cask 'native-instruments-form' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Form.iso")
-  name 'Form'
+  name 'Native Instruments Form'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/form/'
 
   pkg "Form #{version} Installer Mac.pkg",

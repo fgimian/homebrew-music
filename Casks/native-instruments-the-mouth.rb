@@ -8,7 +8,7 @@ cask 'native-instruments-the-mouth' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/The_Mouth.iso")
-  name 'The Mouth'
+  name 'Native Instruments The Mouth'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/the-mouth/'
 
   pkg "The Mouth #{version} Installer Mac.pkg",

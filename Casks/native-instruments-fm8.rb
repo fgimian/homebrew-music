@@ -8,7 +8,7 @@ cask 'native-instruments-fm8' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/FM8.iso")
-  name 'FM8'
+  name 'Native Instruments FM8'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/fm8/'
 
   pkg "FM8 #{version} Installer Mac.pkg"

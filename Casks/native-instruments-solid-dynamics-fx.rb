@@ -8,7 +8,7 @@ cask 'native-instruments-solid-dynamics-fx' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Solid_Dynamics_FX.iso")
-  name 'Solid Dynamics FX'
+  name 'Native Instruments Solid Dynamics FX'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/solid-dynamics/'
 
   pkg "Solid Dynamics FX #{version} Installer Mac.pkg"

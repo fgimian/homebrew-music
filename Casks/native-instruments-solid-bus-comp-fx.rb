@@ -8,7 +8,7 @@ cask 'native-instruments-solid-bus-comp-fx' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Solid_Bus_Comp_FX.iso")
-  name 'Solid Bus Comp FX'
+  name 'Native Instruments Solid Bus Comp FX'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/solid-bus-comp/'
 
   pkg "Solid Bus Comp FX #{version} Installer Mac.pkg"

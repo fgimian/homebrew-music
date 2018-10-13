@@ -8,7 +8,7 @@ cask 'native-instruments-phasis' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Phasis.iso")
-  name 'Phasis'
+  name 'Native Instruments Phasis'
   homepage 'https://www.native-instruments.com/en/specials/happy-holidays-2017/download-phasis/'
 
   pkg "Phasis #{version} Installer Mac.pkg"

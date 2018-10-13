@@ -8,7 +8,7 @@ cask 'native-instruments-rammfire' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Rammfire.iso")
-  name 'Rammfire'
+  name 'Native Instruments Rammfire'
   homepage 'https://www.native-instruments.com/en/products/komplete/guitar/rammfire/'
 
   pkg "Rammfire #{version} Installer Mac.pkg",

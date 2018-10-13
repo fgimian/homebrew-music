@@ -8,7 +8,7 @@ cask 'native-instruments-reflektor' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Reflektor.iso")
-  name 'Reflektor'
+  name 'Native Instruments Reflektor'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/reflektor/'
 
   pkg "Reflektor #{version} Installer Mac.pkg",

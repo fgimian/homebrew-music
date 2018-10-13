@@ -8,7 +8,7 @@ cask 'native-instruments-replika-xt' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Replika_XT.iso")
-  name 'Replika XT'
+  name 'Native Instruments Replika XT'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/replika-xt/'
 
   pkg "Replika XT #{version} Installer Mac.pkg"

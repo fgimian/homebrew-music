@@ -8,7 +8,7 @@ cask 'native-instruments-native-browser-previews' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Native_Browser_Preview_Library.iso")
-  name 'Native Browser Previews'
+  name 'Native Instruments Native Browser Previews'
   homepage 'https://www.native-instruments.com/en/products/komplete/keyboards/komplete-kontrol-s-series/'
 
   pkg "Native Browser Preview Library #{version} Installer Mac.pkg"

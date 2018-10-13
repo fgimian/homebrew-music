@@ -8,7 +8,7 @@ cask 'native-instruments-traktors-12' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Traktors_12.iso")
-  name 'Traktors 12'
+  name 'Native Instruments Traktors 12'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/traktors-12/'
 
   pkg "Traktors 12 #{version} Installer Mac.pkg",

@@ -8,7 +8,7 @@ cask 'native-instruments-komplete-kontrol' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Komplete_Kontrol.iso")
-  name 'Komplete Kontrol'
+  name 'Native Instruments Komplete Kontrol'
   homepage 'https://www.native-instruments.com/en/products/komplete/keyboards/komplete-kontrol-s-series/'
 
   pkg "Komplete Kontrol #{version} Installer Mac.pkg"

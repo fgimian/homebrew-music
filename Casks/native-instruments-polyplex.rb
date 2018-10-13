@@ -8,7 +8,7 @@ cask 'native-instruments-polyplex' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Polyplex.iso")
-  name 'Polyplex'
+  name 'Native Instruments Polyplex'
   homepage 'https://www.native-instruments.com/en/products/komplete/drums/polyplex/'
 
   pkg "Polyplex #{version} Installer Mac.pkg",

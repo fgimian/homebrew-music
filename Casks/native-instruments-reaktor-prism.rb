@@ -8,7 +8,7 @@ cask 'native-instruments-reaktor-prism' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Reaktor_Prism.iso")
-  name 'Reaktor Prism'
+  name 'Native Instruments Reaktor Prism'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/reaktor-prism/'
 
   pkg "Reaktor Prism #{version} Installer Mac.pkg",

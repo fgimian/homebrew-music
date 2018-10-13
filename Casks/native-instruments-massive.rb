@@ -8,7 +8,7 @@ cask 'native-instruments-massive' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Massive.iso")
-  name 'Massive'
+  name 'Native Instruments Massive'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/massive/'
 
   pkg "Massive #{version} Installer Mac.pkg"

@@ -8,7 +8,7 @@ cask 'native-instruments-kontakt-5' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Kontakt_5.iso")
-  name 'Kontakt 5'
+  name 'Native Instruments Kontakt 5'
   homepage 'https://www.native-instruments.com/en/products/komplete/samplers/kontakt-5/'
 
   pkg "Kontakt 5 #{version} Installer Mac.pkg"

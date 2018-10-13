@@ -8,7 +8,7 @@ cask 'native-instruments-rc-24' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/RC_24.iso")
-  name 'RC 24'
+  name 'Native Instruments RC 24'
   homepage 'https://www.native-instruments.com/en/products/komplete/effects/rc-24/'
 
   pkg "RC 24 #{version} Installer Mac.pkg"

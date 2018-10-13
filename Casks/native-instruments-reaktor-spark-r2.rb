@@ -8,7 +8,7 @@ cask 'native-instruments-reaktor-spark-r2' do
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Reaktor_Spark_R2.iso")
-  name 'Reaktor Spark R2'
+  name 'Native Instruments Reaktor Spark R2'
   homepage 'https://www.native-instruments.com/en/products/komplete/synths/reaktor-spark/'
 
   pkg "Reaktor Spark R2 #{version} Installer Mac.pkg",
