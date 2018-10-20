@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'ableton-live-10-suite' do
-  version '10.0.3'
-  sha256 '837c412594fea89bf2132792870eabe4f42776e0ea4f8faa54861885061a6d44'
+  version '10.0.4'
+  sha256 '22d08c06e1596be24ed6accfc7282175598c6f1a49314f955e5cb9752df1d6df'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Ableton/ableton_live_suite_#{version}_64.dmg")

@@ -1,6 +1,6 @@
 cask 'steinberg-elicenser-control-center' do
-  version '6.11.3.1236'
-  sha256 '8c386fd68fa5decb83f75a520502ca01a8396d08f843fc41c44036f57095538e'
+  version :latest
+  sha256 :no_check
 
   url 'http://download.steinberg.net/downloads/eLicenserControl.dmg'
   name 'Steinberg eLicenser Control Center'
