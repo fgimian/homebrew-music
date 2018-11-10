@@ -9,7 +9,7 @@ cask 'cableguys-volumeshaper' do
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Cableguys/Cableguys-VolumeShaper4.zip")
   name 'Cableguys VolumeShaper'
-  homepage 'http://www.cableguys.com/filter-shaper.html'
+  homepage 'http://www.cableguys.com/'
 
   pkg "Cableguys - VolumeShaper #{version}/Mac/Cableguys - VolumeShaper #{version}.pkg"
 
