@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'dmgaudio-equilibrium' do
-  version '1.55'
-  sha256 'd545de1e23feed6ca0b37d7fc1e1321c3116ba9d2968250ff38220a9de82af65'
+  version '1.56'
+  sha256 '86f59b6c8c5e0c290ef1639dfc7def149f7ab6ba69854bf15d9d3512ffde49a8'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/DMGAudio/EQuilibriumMac_v#{version}.zip")

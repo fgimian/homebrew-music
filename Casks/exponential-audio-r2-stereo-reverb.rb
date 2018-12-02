@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'exponential-audio-r2-stereo-reverb' do
-  version '4.0.0'
-  sha256 '7bd654f0fc341bf797bd4aa8073caacff3a517d7f11832abc139da2ecc1a3e2e'
+  version '5.0.0'
+  sha256 'b1a798c0f6b2f5358bb737eddd08c7762bfb6d2412affaead6e20eb75014345d'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Exponential Audio/R2_Mac_Release_#{version}.dmg.zip")
