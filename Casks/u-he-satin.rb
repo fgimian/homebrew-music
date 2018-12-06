@@ -11,7 +11,7 @@ cask 'u-he-satin' do
   name 'u-he Satin'
   homepage 'https://u-he.com/products/satin/'
 
-  pkg "Satin#{version.after_comma}Mac/Satin #{version.before_comma} Installer.pkg"
+  pkg "Satin_#{version.after_comma}_Mac/Satin #{version.before_comma} Installer.pkg"
 
   uninstall pkgutil: 'com.u-he.Satin.*'
 
