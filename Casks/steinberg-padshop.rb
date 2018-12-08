@@ -11,7 +11,7 @@ cask 'steinberg-padshop' do
   name 'Steinberg Padshop'
   homepage 'https://www.steinberg.net/en/products/vst/padshop/padshop.html'
 
-  depends_on cask: 'steinberg-cubase-pro-9'
+  depends_on cask: 'steinberg-cubase-pro-9v5'
 
   pkg 'Padshop.pkg'
 end
