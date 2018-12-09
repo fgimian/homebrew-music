@@ -13,11 +13,12 @@ cask 'softube-drawmer-s73' do
 
   pkg "Softube Drawmer S73 Installer #{version.major_minor_patch} r#{version.after_comma}.pkg"
 
-  uninstall pkgutil: 'com.softube.pkg.PlugIns_Drawmer_S73.*'
-
-  zap delete: [
-                '~/Library/Application Support/Softube/Drawmer S73.txt',
-                "/Library/Application Support/Softube/Softube Drawmer S73 Uninstaller #{version}.pkg",
-                '/Library/Application Support/Softube/SSX/Drawmer S73.ssx',
-              ]
+  uninstall pkgutil: 'com.softube.pkg.PlugIns_Drawmer_S73',
+            delete:  [
+                       '/Library/Application Support/Avid/Audio/Plug-Ins/Drawmer S73.aaxplugin',
+                       '/Library/Application Support/Softube/SSX/Drawmer S73.ssx',
+                       '/Library/Audio/Plug-Ins/Components/Drawmer S73.component',
+                       '/Library/Audio/Plug-Ins/VST/Softube/Drawmer S73.vst',
+                       '/Library/Audio/Plug-Ins/VST3/Drawmer S73.vst3',
+                     ]
 end

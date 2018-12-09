@@ -13,11 +13,12 @@ cask 'softube-fet-compressor' do
 
   pkg "Softube FET Compressor Installer #{version.major_minor_patch} r#{version.after_comma}.pkg"
 
-  uninstall pkgutil: 'com.softube.pkg.PlugIns_FET_Compressor.*'
-
-  zap delete: [
-                '/Library/Application Support/Softube/FET Compressor.txt',
-                "/Library/Application Support/Softube/Softube FET Compressor Uninstaller #{version}.pkg",
-                '/Library/Application Support/Softube/SSX/FET Compressor.ssx',
-              ]
+  uninstall pkgutil: 'com.softube.pkg.PlugIns_FET_Compressor',
+            delete:  [
+                       '/Library/Application Support/Avid/Audio/Plug-Ins/FET Compressor.aaxplugin',
+                       '/Library/Application Support/Softube/SSX/FET Compressor.ssx',
+                       '/Library/Audio/Plug-Ins/Components/FET Compressor.component',
+                       '/Library/Audio/Plug-Ins/VST/Softube/FET Compressor.vst',
+                       '/Library/Audio/Plug-Ins/VST3/FET Compressor.vst3',
+                     ]
 end

@@ -13,10 +13,12 @@ cask 'softube-tsar-1r' do
 
   pkg "Softube TSAR-1R Reverb Installer #{version.major_minor_patch} r#{version.after_comma}.pkg"
 
-  uninstall pkgutil: 'com.softube.pkg.PlugIns_TSAR-1R_Reverb.*'
-
-  zap delete: [
-                '~/Library/Application Support/Softube/TSAR-1R Reverb.txt',
-                "/Library/Application Support/Softube/Softube TSAR-1R Reverb Uninstaller #{version}.pkg",
-              ]
+  uninstall pkgutil: 'com.softube.pkg.PlugIns_TSAR-1R_Reverb',
+            delete:  [
+                       '/Library/Application Support/Avid/Audio/Plug-Ins/TSAR-1R Reverb.aaxplugin',
+                       '/Library/Application Support/Softube/SSX/TSAR-1R Reverb.ssx',
+                       '/Library/Audio/Plug-Ins/Components/TSAR-1R Reverb.component',
+                       '/Library/Audio/Plug-Ins/VST/Softube/TSAR-1R Reverb.vst',
+                       '/Library/Audio/Plug-Ins/VST3/TSAR-1R Reverb.vst3',
+                     ]
 end

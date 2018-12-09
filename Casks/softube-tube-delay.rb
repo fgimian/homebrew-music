@@ -13,10 +13,12 @@ cask 'softube-tube-delay' do
 
   pkg "Softube Tube Delay Installer #{version.major_minor_patch} r#{version.after_comma}.pkg"
 
-  uninstall pkgutil: 'com.softube.pkg.PlugIns_Tube_Delay.*'
-
-  zap delete: [
-                '~/Library/Application Support/Softube/Tube Delay.txt',
-                "/Library/Application Support/Softube/Softube Tube Delay Uninstaller #{version}.pkg",
-              ]
+  uninstall pkgutil: 'com.softube.pkg.PlugIns_Tube_Delay',
+            delete:  [
+                       '/Library/Application Support/Avid/Audio/Plug-Ins/Tube Delay.aaxplugin',
+                       '/Library/Application Support/Softube/SSX/Tube Delay.ssx',
+                       '/Library/Audio/Plug-Ins/Components/Tube Delay.component',
+                       '/Library/Audio/Plug-Ins/VST/Softube/Tube Delay.vst',
+                       '/Library/Audio/Plug-Ins/VST3/Tube Delay.vst3',
+                     ]
 end
