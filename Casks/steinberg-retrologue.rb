@@ -14,4 +14,7 @@ cask 'steinberg-retrologue' do
   depends_on cask: 'steinberg-cubase-pro-9v5'
 
   pkg 'Retrologue.pkg', allow_untrusted: true
+
+  uninstall pkgutil: 'com.steinberg.RetrologueAU.retrologue',
+            delete:  '/Library/Audio/Plug-Ins/Components/Retrologue.component'
 end

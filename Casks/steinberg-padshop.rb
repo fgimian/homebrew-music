@@ -14,4 +14,7 @@ cask 'steinberg-padshop' do
   depends_on cask: 'steinberg-cubase-pro-9v5'
 
   pkg 'Padshop.pkg'
+
+  uninstall pkgutil: 'com.steinberg.PadshopAU.padshop',
+            delete:  '/Library/Audio/Plug-Ins/Components/Padshop.component'
 end
