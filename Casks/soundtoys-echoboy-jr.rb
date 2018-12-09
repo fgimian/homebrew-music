@@ -13,7 +13,7 @@ cask 'soundtoys-echoboy-jr' do
 
   pkg 'Install EchoBoy Jr..pkg'
 
-  uninstall pkgutil: 'com.soundtoys.com.soundtoys.EchoBoyJr5'
+  uninstall pkgutil: 'com.soundtoys.EchoBoyJr5'
 
   zap delete: [
                 '~/Library/Preferences/com.soundtoys.metrics.plist',

@@ -15,6 +15,12 @@ cask 'eventide-2016-stereo-room' do
             args:   ['--mode', 'unattended'],
             sudo:   true
 
+  uninstall delete: [
+                      '/Library/Application Support/Avid/Audio/Plug-Ins/Eventide/2016 Stereo Room.aaxplugin',
+                      '/Library/Audio/Plug-Ins/VST/Eventide/2016 Stereo Room.vst',
+                      '/Library/Audio/Plug-Ins/Components/2016 Stereo Room.component',
+                    ]
+
   zap delete: [
                 '~/Library/Saved Application State/com.eventide.2016StereoRoom.savedState',
               ]

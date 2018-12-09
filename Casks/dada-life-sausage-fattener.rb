@@ -13,9 +13,9 @@ cask 'dada-life-sausage-fattener' do
 
   pkg "SausageFattener-#{version.before_comma}-Installer [#{version.after_comma}].pkg"
 
-  uninstall pkgutil: 'com.tailorednoise.SausageFattener.installer.*'
-
-  zap delete: [
-                '/Library/Logs/SausageFattener64.log',
-              ]
+  uninstall pkgutil: 'com.tailorednoise.SausageFattener.installer',
+            delete:  [
+                       '/Library/Audio/Plug-Ins/VST/SausageFattener.vst',
+                       '/Library/Audio/Plug-Ins/Components/SausageFattener.component',
+                     ]
 end

@@ -13,7 +13,7 @@ cask 'soundtoys-sie-q' do
 
   pkg 'Install SieQ.pkg'
 
-  uninstall pkgutil: 'com.soundtoys.com.soundtoys.SieQ5'
+  uninstall pkgutil: 'com.soundtoys.SieQ5'
 
   zap delete: [
                 '~/Library/Preferences/com.soundtoys.metrics.plist',

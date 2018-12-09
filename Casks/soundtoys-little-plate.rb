@@ -13,7 +13,7 @@ cask 'soundtoys-little-plate' do
 
   pkg 'Install Little Plate.pkg'
 
-  uninstall pkgutil: 'com.soundtoys.com.soundtoys.LittlePlate5'
+  uninstall pkgutil: 'com.soundtoys.LittlePlate5'
 
   zap delete: [
                 '~/Library/Preferences/com.soundtoys.metrics.plist',
