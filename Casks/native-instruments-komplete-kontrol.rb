@@ -3,11 +3,11 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'native-instruments-komplete-kontrol' do
-  version '2.0.2'
-  sha256 '73318e839e368db852ffdbed9aab7242869ccf20e3c514252c0d1921b4d0afe1'
+  version '2.0.5'
+  sha256 '944d16d091d53d1219929ba37888cbfc85181e51a8a83536a6105b2463af0189'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Komplete_Kontrol.iso")
+  url Addressable::URI.encode("file://#{base_dir}/Native Instruments/Komplete_Kontrol_Installer.dmg")
   name 'Native Instruments Komplete Kontrol'
   homepage 'https://www.native-instruments.com/en/products/komplete/keyboards/komplete-kontrol-s-series/'
 
