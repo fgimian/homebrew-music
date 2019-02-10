@@ -35,7 +35,7 @@ cask 'synapse-audio-dune' do
   uninstall pkgutil: [
                        'com.audiounit.SynapseAudio.DUNE2.*',
                        'com.audiounit.SynapseAudio.SynSerials2.pkg',
-                       'com.audiounit.SynapseAudio.SynSerials25.pkg',
+                       'com.audiounit.SynapseAudio.SynSerials26.pkg',
                      ]
 
   zap delete: [

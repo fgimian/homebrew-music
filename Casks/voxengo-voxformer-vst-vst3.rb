@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'voxengo-voxformer-vst-vst3' do
-  version '2.11'
-  sha256 'e846cda09079fe99e679227536a75873f754df276cf37a579de99eafc09798d7'
+  version '2.12'
+  sha256 '8438a44282b7bbe0889ae66462a3f93cf7516736f61d07ab950ff17f46f9b5a6'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Voxengo/VoxengoVoxformer_#{version.no_dots}_Mac_VST_VST3_setup.dmg")

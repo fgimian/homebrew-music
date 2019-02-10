@@ -3,15 +3,15 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'u-he-hive' do
-  version '1.1.0,3898'
-  sha256 '57e2a2285f391154b40b10b92f428873ce45c941d48940d5adb671276fdbecd3'
+  version '1.2.0,8115'
+  sha256 '1ba8670614afd3749e1677a2de138b77eee50dfc0c7ccf2f4513411de2ba4810'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/u-he/Hive_#{version.major_minor.dots_to_underscores}_Mac.zip")
+  url Addressable::URI.encode("file://#{base_dir}/u-he/Hive_#{version.before_comma.no_dots}_#{version.after_comma}_Mac.zip")
   name 'u-he Hive'
   homepage 'https://u-he.com/products/hive/'
 
-  pkg "Hive#{version.after_comma}Mac/Hive #{version.before_comma}.#{version.after_comma} Installer.pkg"
+  pkg "Hive_#{version.after_comma}_Mac/Hive #{version.before_comma} Installer.pkg"
 
   uninstall pkgutil: 'com.u-he.Hive.*'
 

@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'illformed-glitch' do
-  version '2.1.0'
-  sha256 '595417c5babe8d9abff33148a58010eff298e40fead2bd7504c8679bd199644b'
+  version '2.1.1'
+  sha256 '0ed7106be3e66d92c5e195a144b8b11655eba015a4d70c5d2f9da560a9a21332'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Illformed/Glitch_#{version.dots_to_underscores}_Mac_Registered.zip")

@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'celemony-melodyne-editor' do
-  version '4.2.0.020,fgimian'
-  sha256 'c99ffb861d4715a49006c425268676fd582d7ae04034e2adc870c76a3b870c76'
+  version '4.2.1.003,fgimian'
+  sha256 'a02d558ed07c5269a97cdb98e61caa626e715279c334e54b1a7488be11edb3f3'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Celemony/Melodyne.#{version.before_comma}.#{version.after_comma}.dmg")
