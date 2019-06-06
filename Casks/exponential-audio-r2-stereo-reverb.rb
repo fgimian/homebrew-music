@@ -11,7 +11,7 @@ cask 'exponential-audio-r2-stereo-reverb' do
   name 'Exponential Audio R2 Stereo Reverb'
   homepage 'https://www.izotope.com/en/products/exponential-audio-reverbs/r2.html'
 
-  pkg "R2Release_#{version}/R2Release_#{version}.pkg"
+  pkg "R2Release_#{version}.pkg"
 
   uninstall pkgutil: [
                        'com.ExponentialAudio.R2*',
