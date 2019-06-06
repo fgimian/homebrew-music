@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'voxengo-msed-au-aax' do
-  version '3.0'
-  sha256 '641f57631434aa1008e0f5d3746bcc9569c66850dc12947f9c05e717045883fd'
+  version '3.1'
+  sha256 'a1742db169a1c93bbee0a80acb59460f649590cffe998a86f72b9a1bd4593291'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Voxengo/VoxengoMSED_#{version.no_dots}_Mac_AU_AAX_setup.dmg")

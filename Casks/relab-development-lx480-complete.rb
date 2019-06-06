@@ -2,13 +2,13 @@ require 'addressable/uri'
 
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
-cask 'relab-lx480-complete' do
+cask 'relab-development-lx480-complete' do
   version '2.2.5'
   sha256 '7cda120b84986be2dc381cdd1fdf8e7104538d9ba7d9ca8d0c85c0d5c526664e'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/Relab/LX480_Complete_mac.zip")
-  name 'Relab LX480 Complete'
+  url Addressable::URI.encode("file://#{base_dir}/Relab Development/LX480_Complete_mac.zip")
+  name 'Relab Development LX480 Complete'
   homepage 'http://relab.dk/product/lx480-complete/'
 
   pkg "LX480 Complete v#{version}.pkg"

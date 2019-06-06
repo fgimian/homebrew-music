@@ -2,13 +2,13 @@ require 'addressable/uri'
 
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
-cask 'dmgaudio-equick' do
-  version '1.13'
-  sha256 'ebfa1110da02d921516095a1116e99a3794dc07acec3af99dbe2f4e036e1dd07'
+cask 'dmg-audio-equick' do
+  version '1.14'
+  sha256 '6f4921dabe0fbf57f08787b2cd3e09dd3a9b0364f72610de0995032dd8cd522f'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/DMGAudio/EQuickMac_v#{version}.zip")
-  name 'DMGAudio EQuick'
+  url Addressable::URI.encode("file://#{base_dir}/DMG Audio/EQuickMac_v#{version}.zip")
+  name 'DMG Audio EQuick'
   homepage 'https://dmgaudio.com/equick'
 
   pkg "EQuickMac_v#{version}.pkg"

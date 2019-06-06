@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'modartt-pianoteq' do
-  version '6.4.1'
-  sha256 '8119d2561c9dfc59c9ec066207626ad1aeaa8b7ec4e900c4cbc5f974526b6d17'
+  version '6.5.1'
+  sha256 'cfb889b5b855286d0135197e4b75350d98547489a9f70d9091f96363453c7479'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/Modartt/pianoteq_setup_v#{version.no_dots}.dmg")
@@ -13,10 +13,10 @@ cask 'modartt-pianoteq' do
 
   depends_on formula: 'xz'
 
-  pkg 'Install Pianoteq 6.app/Contents/Resources/Install Pianoteq 6.mpkg'
+  pkg 'Install Pianoteq 6.app/Contents/Resources/Install Pianoteq 6.pkg'
 
   preflight do
-    system("/usr/local/bin/unlzma '#{staged_path}/Install Pianoteq 6.app/Contents/Resources/Install Pianoteq 6.mpkg/Contents/Archive.pax.lzma'")
+    system("/usr/local/bin/unlzma '#{staged_path}/Install Pianoteq 6.app/Contents/Resources/Install Pianoteq 6.pkg.lzma'")
   end
 
   uninstall pkgutil: 'com.modartt.Pianoteq6.pkg'

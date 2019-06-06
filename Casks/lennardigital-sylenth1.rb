@@ -3,8 +3,8 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'lennardigital-sylenth1' do
-  version '3.0.4.1'
-  sha256 'a56a83958fdf560e939646da5c65a4a7bfc1f0ba74bf522ac5a0c9723332f507'
+  version '3.0.5.6'
+  sha256 '266e341aa108ade8575fec0574eefa93adc7a15dcdec1f2b11f9c4688c97b595'
 
   # :base_dir was verified as official when first introduced to the cask
   url Addressable::URI.encode("file://#{base_dir}/LennarDigital/Sylenth1Mac.dmg")

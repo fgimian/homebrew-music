@@ -3,15 +3,15 @@ require 'addressable/uri'
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
 cask 'softube-tube-delay' do
-  version '2.4.74-20181029-28021-14nmghg,281289'
-  sha256 '20fae7110499f2bbcc4488f7d9720aeb76c9251687916fc8c2cbb3857b320c55'
+  version '2.4.83,282194'
+  sha256 'c8a9c04497def06d59dff0ca3715712950e7d208368c17c27540d9cb5ba2417e'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/Softube/Tube_Delay-#{version.before_comma}.zip")
+  url Addressable::URI.encode("file://#{base_dir}/Softube/Softube Tube Delay Installer #{version.before_comma} r#{version.after_comma}.pkg")
   name 'Softube Tube Delay'
   homepage 'https://www.softube.com/index.php?id=td'
 
-  pkg "Softube Tube Delay Installer #{version.major_minor_patch} r#{version.after_comma}.pkg"
+  pkg "Softube Tube Delay Installer #{version.before_comma} r#{version.after_comma}.pkg"
 
   uninstall pkgutil: 'com.softube.pkg.PlugIns_Tube_Delay',
             delete:  [

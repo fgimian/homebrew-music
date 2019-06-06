@@ -2,13 +2,13 @@ require 'addressable/uri'
 
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
-cask 'dmgaudio-trackmeter' do
-  version '1.01'
-  sha256 'e30714c4cae6f096db503e23bc32b3593f98a09b1bd8833149d7a8c8dbbcc50e'
+cask 'dmg-audio-trackmeter' do
+  version '1.02'
+  sha256 '3b920d96c426a4be50a001a953f489f8295bd1905e911a015d139054fc558d66'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/DMGAudio/TrackMeterMac_v#{version}.zip")
-  name 'DMGAudio TrackMeter'
+  url Addressable::URI.encode("file://#{base_dir}/DMG Audio/TrackMeterMac_v#{version}.zip")
+  name 'DMG Audio TrackMeter'
   homepage 'https://dmgaudio.com/trackmeter'
 
   pkg "TrackMeterMac_v#{version}.pkg"

@@ -2,13 +2,13 @@ require 'addressable/uri'
 
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
-cask 'dmgaudio-compassion' do
-  version '1.17'
-  sha256 'ed87e9ba6ccf08c9c9af53f35c4c7ef0e9a01fd0b6dd3fd9f6459cb4c01ac4c3'
+cask 'dmg-audio-compassion' do
+  version '1.18'
+  sha256 '4c537a492f4db6d9ff376dc8ae530aa15b6b5469b22ae18b301125c07f49a649'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/DMGAudio/CompassionMac_v#{version}.zip")
-  name 'DMGAudio Compassion'
+  url Addressable::URI.encode("file://#{base_dir}/DMG Audio/CompassionMac_v#{version}.zip")
+  name 'DMG Audio Compassion'
   homepage 'https://dmgaudio.com/compassion'
 
   pkg "CompassionMac_v#{version}.pkg"

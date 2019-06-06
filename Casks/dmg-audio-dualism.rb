@@ -2,13 +2,13 @@ require 'addressable/uri'
 
 base_dir = ENV.fetch('HOMEBREW_CASK_MUSIC_SOFTWARE_BASEDIR', Dir.pwd)
 
-cask 'dmgaudio-dualism' do
-  version '1.07'
-  sha256 '79c4fea6aa531fc917c07c634da02a2c7bebf2a4febfc9087f78577e023c00b7'
+cask 'dmg-audio-dualism' do
+  version '1.08'
+  sha256 'cf11325ad4387d3c306cc3abe37782e61f4404b86d7b0a6da963acec0649de51'
 
   # :base_dir was verified as official when first introduced to the cask
-  url Addressable::URI.encode("file://#{base_dir}/DMGAudio/DualismMac_v#{version}.zip")
-  name 'DMGAudio Dualism'
+  url Addressable::URI.encode("file://#{base_dir}/DMG Audio/DualismMac_v#{version}.zip")
+  name 'DMG Audio Dualism'
   homepage 'https://dmgaudio.com/dualism'
 
   pkg "DualismMac_v#{version}.pkg"
